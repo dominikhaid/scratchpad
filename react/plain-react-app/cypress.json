@@ -1,0 +1,12 @@
+{
+  "projectId": "4eqit5",
+  "viewportHeight": 600,
+  "viewportWidth": 1000,
+  "component": {
+    "viewportHeight": 500,
+    "viewportWidth": 500
+  },
+  "video": true,
+  "ignoreTestFiles": ["**/offline/*/*.js", "**/offline/*.js"],
+  "baseUrl": "http://localhost:3000"
+}
