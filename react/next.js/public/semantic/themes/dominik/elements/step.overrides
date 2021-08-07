@@ -1,0 +1,47 @@
+.ui.steps .step:after {
+  display: none;
+}
+.ui.steps .completed.step:before {
+  opacity: 0.5;
+}
+
+.ui.steps .step.active:after {
+  display: block;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+}
+.ui.vertical.steps .step.active:after {
+  display: block;
+  border: none;
+  top: 50%;
+  right: 0%;
+  border-left: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+#__next .ui.steps .step {
+  border: 1px solid @primaryColor;
+}
+
+#__next .ui.steps .step.active::before, 
+#__next .ui.steps .active.step .icon,
+#__next .ui.steps .step .icon {
+    color: fade(@primaryColor,50);
+}
+
+#__next .ui.steps div.title {
+    color: @primaryColor;
+}
+
+#__next .ui.steps div.disabled.step div.title,
+#__next .ui.steps div.disabled.step i  {
+  color: lighten(@black,2);
+}
+
+#__next .ui.steps .step.active::after {
+border: 1px solid @primaryColor;
+background:@primaryColor;
+z-Index:-1;
+}

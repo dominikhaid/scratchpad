@@ -1,0 +1,227 @@
+@import '../semantic/themes/dominik/globals/site.variables';
+
+
+@media screen and (max-width: 400px) {
+	#main-logo {
+		max-width: 230px !important;
+
+	}
+
+#__next #header-main-grid #brand-right {
+		grid-column: span 6;
+	}
+}
+
+@media screen and (max-width: 650px) {
+#__next main>div:not([class*="fluid"]) {
+	margin-left: 1rem !important;
+	margin-right: 1rem !important;
+}
+
+#__next .ui.container.material-grid {
+	width: calc(100vw - 2rem) !important;
+}
+
+#__next main [class*="material-grid__col"] {
+	padding: 1rem;
+}
+
+#__next #blogWrapper {
+padding: 0px;
+}
+
+#__next #blogDes,
+#__next #blogContent .ui.grid .column,
+#__next #blogContent .ui.grid .row {
+	padding: 1rem;
+	margin: 0;
+}
+#legalsWrapper {
+	background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+body #__next .material-grid__col--xsmall--0 {
+	display: none;
+}
+
+}
+
+@media screen and (max-width: 1200px) {
+
+
+	#blogWrapper {
+	grid-column: span 12;
+}
+
+#header-main-grid #brand-left {
+	grid-column: span 8;
+}
+
+#header-main-grid #brand-right {
+	grid-column: span 4;
+}
+
+body #__next .material-grid__col--small--0 {
+	display: none !important;
+}
+
+#__next #blogWrapper {
+	grid-column: span 8;
+}
+
+}
+
+@media screen and (max-width: 1024px) {
+header {
+	border-bottom: 4px solid #d26f1c;
+	;
+}
+
+#__next #legalsMenuWrapper,
+#__next #legalsWrapper {
+	padding: 1rem !important;
+}
+
+}
+
+@media screen and (max-width: 1366px) {
+
+	#__next  .material-grid {
+		grid-template-columns: repeat(auto-fill, 8.0vw);
+	}
+
+}
+
+
+@media screen and (max-width: 1440px) {
+.icon.cliped::before {
+	height: 19rem !important;
+	font-size: 11rem;
+	margin: -2rem;
+	width: 11rem;
+	padding: 6.5rem 2rem;
+}
+
+.icon.file.cliped::before {
+
+	margin-left: -3rem;
+	width: 15rem;
+}
+#__next nav#main-menue a {
+	font-size: 1rem;
+	margin-right: 0px;
+}
+}
+
+
+
+@media screen and (max-width: 900px) {
+
+#main-logo {
+	max-width: 350px;
+}
+
+#__next .material-grid {
+	grid-template-columns: repeat(auto-fill, 14.28vw);
+}
+
+	#__next .material-grid__col--medium--1,
+	#__next .material-grid__col--medium--2,
+	#__next .material-grid__col--medium--3,
+	#__next .material-grid__col--medium--4,
+	#__next .material-grid__col--medium--5,
+	#__next .material-grid__col--medium--6,
+	#__next .material-grid__col--medium--7,
+	#__next .material-grid__col--medium--8,
+	#__next .material-grid__col--medium--9,
+	#__next .material-grid__col--medium--10,
+	#__next .material-grid__col--medium--11,
+	#__next .material-grid__col--medium--12 {
+		grid-column: span 9;
+		// margin-top: 2rem !important;
+	}
+
+		#__next .grid:not([class*="icon-grid"]) .column {
+		min-width: 100%;
+	}
+
+		#__next .fluid.container {
+			margin-left: 0 !important;
+			margin-right: 0 !important;
+		}
+}
+
+
+// @media screen and (min-width: 1440px) {
+
+// }
+
+@media screen and (min-width: 768px) {
+
+	#__next,
+	html {
+		font-size: 18px;
+	}
+}
+
+
+@media screen and (min-width:900px) {
+
+#__next footer {
+	padding-left: 7rem;
+	padding-right: 7rem;
+}
+}
+
+
+@media screen and (min-width: 1200px) {
+	html {
+		font-size: 14px;
+	}
+
+}
+
+@media screen and (min-width: 1300px) {
+	html {
+		font-size: 18px;
+	}
+
+}
+
+
+@media screen and (min-width: 2000px) {
+#__next,
+html {
+font-size: 20px;
+
+}
+
+#__next .material-grid {
+grid-template-columns: repeat(auto-fill, 11.1rem)
+}
+}
+
+@media screen and (min-width: 2800px) {
+// #__next,
+// html {
+// 	font-size: 35px;
+// }
+#__next .material-grid {
+	grid-template-columns: repeat(auto-fill, 8.5vw);
+}
+}
+
+@media screen and (min-width: 3400px) {
+
+	#__next,
+	html {
+		font-size: 35px;
+	}
+
+	#__next .material-grid {
+		grid-template-columns: repeat(auto-fill, 8.5vw);
+	}
+}
+
+

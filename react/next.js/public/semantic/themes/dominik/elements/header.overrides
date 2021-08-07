@@ -1,0 +1,29 @@
+
+#__next .sub.header {
+ color: fade(@textColor,50%);
+}
+
+.icon.header .icon, .header .icon {
+ color:     fade(@primaryColor, 50%);
+}
+
+#__next i.circular.icon {
+    box-shadow: 0em 0em 0em 0.1em 
+    fade(@primaryColor, 20%) inset;
+}
+
+h1.ui.header {
+  color: @primaryColor;
+}
+
+h5.ui.header {
+  color: @black;
+}
+
+h6.ui.header {
+  color: fade(@primaryColor, 50%);
+}
+
+#__next .ui.attached.header {
+   background: transparent;
+}

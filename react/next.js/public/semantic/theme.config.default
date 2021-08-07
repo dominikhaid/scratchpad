@@ -1,0 +1,85 @@
+/*
+
+████████╗██╗  ██╗███████╗███╗   ███╗███████╗███████╗
+╚══██╔══╝██║  ██║██╔════╝████╗ ████║██╔════╝██╔════╝
+   ██║   ███████║█████╗  ██╔████╔██║█████╗  ███████╗
+   ██║   ██╔══██║██╔══╝  ██║╚██╔╝██║██╔══╝  ╚════██║
+   ██║   ██║  ██║███████╗██║ ╚═╝ ██║███████╗███████║
+   ╚═╝   ╚═╝  ╚═╝╚══════╝╚═╝     ╚═╝╚══════╝╚══════╝
+
+*/
+
+
+
+
+
+
+@site        : 'default';
+@reset       : 'default';
+
+
+@button      : 'default';
+@container   : 'default';
+@divider     : 'default';
+@flag        : 'default';
+@header      : 'default';
+@icon        : 'default';
+@image       : 'default';
+@input       : 'default';
+@label       : 'default';
+@list        : 'default';
+@loader      : 'default';
+@placeholder : 'default';
+@rail        : 'default';
+@reveal      : 'default';
+@segment     : 'default';
+@step        : 'default';
+
+
+@breadcrumb  : 'default';
+@form        : 'default';
+@grid        : 'default';
+@menu        : 'default';
+@message     : 'default';
+@table       : 'default';
+
+
+@accordion   : 'default';
+@checkbox    : 'default';
+@dimmer      : 'default';
+@dropdown    : 'default';
+@embed       : 'default';
+@modal       : 'default';
+@nag         : 'default';
+@popup       : 'default';
+@progress    : 'default';
+@rating      : 'default';
+@search      : 'default';
+@shape       : 'default';
+@sidebar     : 'default';
+@sticky      : 'default';
+@tab         : 'default';
+@transition  : 'default';
+
+
+@ad          : 'default';
+@card        : 'default';
+@comment     : 'default';
+@feed        : 'default';
+@item        : 'default';
+@statistic   : 'default';
+
+
+
+
+@themesFolder : 'themes';
+
+
+@siteFolder  : 'default';
+
+
+
+
+@import (multiple) "theme.less";
+
+

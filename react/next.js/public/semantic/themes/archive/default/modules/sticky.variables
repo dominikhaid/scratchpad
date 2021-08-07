@@ -1,0 +1,5 @@
+
+
+@transitionDuration: @defaultDuration;
+@transition: none;
+@zIndex: 800;

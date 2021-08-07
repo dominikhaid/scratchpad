@@ -1,0 +1,22 @@
+
+#__next .ui.tabular.menu .item {
+    background-color: @primaryColor;
+    border: 1px solid @primaryColor;
+}
+
+#__next .ui.tabular.menu .item:last-child {
+   border-radius: 0 @absoluteBorderRadius !important;
+}
+
+#__next .ui.tabular.menu .item {
+   border-radius: 0 ;
+}
+
+#__next .ui.tabular.menu .item:first-child {
+   border-radius: @absoluteBorderRadius 0 !important;
+}
+
+
+#__next .ui.tabular.menu .item.active {
+    background-color: @lightPrimary;
+}

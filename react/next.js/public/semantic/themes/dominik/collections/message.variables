@@ -1,0 +1,54 @@
+@background: transparent;
+@boxShadow:
+  0px 0px 0px 1px rgba(255, 255, 255, 0.3) inset,
+  0px 0px 0px 1px rgba(0, 0, 0, 0.2) inset
+;
+@verticalPadding: 15px;
+@horizontalPadding: 15px;
+
+@headerFontSize: 1.15em;
+
+@infoTextColor: @primaryColor;
+@warningTextColor: @warningColor;
+@errorTextColor: @errorColor;
+
+@floatingBoxShadow:
+  0px 0px 0px 1px rgba(0, 0, 0, 0.1) inset,
+  0px 2px 3px 0px rgba(0, 0, 0, 0.1),
+  0px 0px 0px 1px rgba(0, 0, 0, 0.05) inset
+;
+
+
+@positiveColor           : @green;
+@positiveBackgroundColor : transparent;
+@positiveBorderColor     : #A3C293;
+@positiveHeaderColor     : #1A531B;
+@positiveTextColor       : #2C662D;
+
+
+@negativeColor           : @red;
+@negativeBackgroundColor : transparent;
+@negativeBorderColor     : #E0B4B4;
+@negativeHeaderColor     : #912D2B;
+@negativeTextColor       : #912D2B;
+
+
+@infoColor              : @primaryColor;
+@infoBackgroundColor    : transparent;
+@infoBorderColor        : @white;
+@infoHeaderColor        : @white;
+@infoTextColor          : @primaryColor;
+
+
+@warningColor           : @primaryColor;
+@warningBorderColor     : @primaryColor;
+@warningBackgroundColor : transparent;
+@warningHeaderColor     : @primaryColor;
+@warningTextColor       : @primaryColor;
+
+
+@small: 12px;
+@medium: 13px;
+@large: 14px;
+@huge: 16px;
+@massive: 18px;

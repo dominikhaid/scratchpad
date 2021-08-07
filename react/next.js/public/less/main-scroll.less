@@ -1,0 +1,68 @@
+@import '../semantic/themes/dominik/globals/site.variables';
+
+#__next #scrollBox {
+  position: absolute;
+  right: 1rem;
+  z-index: 100;
+  top: 47%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#__next #scrollDown,
+#__next #scrollUp {
+  font-size: 3rem;
+  color: @transparentWhite;
+  cursor: pointer;
+  text-align: center;
+  width: 25px;
+}
+
+#__next #scrollUp {
+  padding-bottom: 10px;
+}
+
+#__next #scrollDown {
+  padding-top: 10px;
+}
+
+#__next #scrollDown i:hover,
+#__next #scrollDown:hover i,
+#__next #scrollUp i:hover,
+#__next #scrollUp:hover i {
+  color: @primaryColor;
+  text-shadow: 1px 1px 5px @primaryColor;
+}
+
+#scrollDown.active i,
+#scrollUp.active i {
+  color: @primaryColor;
+  text-shadow: 1px 1px 5px @primaryColor;
+}
+
+#scrollDown i,
+#scrollUp i {
+  color: @transparentWhite;
+  transition-property: color, text-shadow;
+  transition-timing-function: ease-out;
+  transition-duration: 0.7s;
+  font-size: 1.5rem;
+}
+
+#__next nav {
+  position: relative;
+  z-index: 1000;
+}
+
+#__next #scrollUp {
+  border-bottom: 2px solid;
+}
+
+#__next main.scrollBoxY {
+  overflow-y: auto;
+  overflow-x: hidden;
+  width: calc(100vw + 100px);
+  margin-right: -100px;
+}

@@ -1,0 +1,66 @@
+
+
+body article .message *:not(i), 
+body .message *:not(i), 
+body div.segment .message *:not(i),
+body div.gri .message *:not(i),
+body div.container .message *:not(i) {
+   font-family: 'Roboto', sans-serif !important;
+}
+
+body .ui.info.message {
+ background: @infoBackgroundColor;
+border-color:@white;
+}
+
+body .ui.warning.message {
+ background: @warningBackgroundColor;
+}
+
+body .ui.error.message i {
+color: @negativeColor;
+}
+
+body .ui.message  i{
+color: @primaryColor;
+}
+
+body .ui.message, body .ui.attached.message {
+    box-shadow: none;
+}
+body .ui.message, body .ui.attached.message {
+    border-width:1px;
+    border-style:solid;
+}
+
+body .ui.error.message {
+    color:@negativeTextColor ;
+}
+
+
+.ui.form .field .prompt.label {
+  font-family: Roboto, sans-serif;
+  position: absolute;
+  top: -40px;
+  height: 65px;
+  z-index: 999;
+}
+
+#__next .ui.container.sysMessage {
+  overflow: hidden;
+  padding: 0;
+  border-width: 0;
+}
+
+#__next .ui.container.sysMessage i {
+  position: absolute;
+  right: -1.5rem;
+  font-size: 8rem;
+  opacity: .2;
+  margin: 0;
+}
+
+#__next .sysMessage .ui.message.error {
+  padding: 1.5rem;
+  border-width: 0;
+}

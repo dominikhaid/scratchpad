@@ -1,0 +1,30 @@
+
+#__next .ui.images .image, 
+#__next .ui.images > img, 
+#__next .ui.images > svg {
+  margin: 0rem 0.5rem 0rem 0.5rem;
+}
+
+#__next img.aligned + span {
+    margin-left: 0.5rem;
+}
+
+#__next img.huge {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#__next img.massive {
+  max-width: none;
+  width: auto;
+  height: auto;
+  margin: 0;
+  min-height: 100%;
+}
+
+#__next img.small {
+  max-width: 70px;
+  margin-left: auto;
+  margin-right: auto;
+}

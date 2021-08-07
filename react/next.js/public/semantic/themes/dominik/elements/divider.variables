@@ -1,0 +1,39 @@
+@margin: 2rem 0rem;
+
+@highlightWidth: 1px;
+@highlightColor: @whiteBorderColor;
+
+@shadowWidth: 1px;
+@shadowColor: @borderColor;
+
+
+@letterSpacing: 0.075em;
+@fontWeight: @bold;
+@color: @darkTextColor;
+@textTransform: uppercase;
+
+
+
+
+@dividerIconSize: 0.8rem;
+@dividerIconMargin: 0.5rem;
+
+
+
+@horizontalMargin: '';
+@horizontalDividerMargin: 2em;
+@horizontalRulerOffset: ~"calc(-50% - "(@horizontalDividerMargin)~")";
+
+@verticalDividerMargin: 2rem;
+@verticalDividerHeight: ~"calc(100% - "(@verticalDividerMargin)~")";
+
+
+@invertedTextColor: @white;
+@invertedHighlightColor: rgba(255, 255, 255, 0.15);
+@invertedShadowColor: @borderColor;
+
+
+@sectionMargin: 2rem;
+
+
+@medium: 1rem;

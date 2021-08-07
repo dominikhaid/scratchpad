@@ -1,0 +1,7 @@
+@headerBackground: @primaryColor;
+@footerBackground: @lightGray;
+
+@cellVerticalPadding: 1em;
+@cellHorizontalPadding: 1em;
+
+@stateMarkerWidth: 1px;

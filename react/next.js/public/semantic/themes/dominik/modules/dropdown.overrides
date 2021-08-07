@@ -1,0 +1,21 @@
+
+
+.ui.dropdown {
+  font-family: 'Roboto';
+}
+
+.ui.dropdown .menu > .item {
+    color: @black;
+}
+
+#__next .ui.selection.dropdown {
+  height: 35px;
+  min-height: 35px;
+  padding: .5rem;
+}
+
+#__next .ui.selection.dropdown > .delete.icon,
+#__next .ui.selection.dropdown > .dropdown.icon,
+#__next .ui.selection.dropdown > .search.icon {
+  top: .5rem;
+}

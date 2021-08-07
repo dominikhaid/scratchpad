@@ -1,0 +1,9 @@
+
+
+@headerBackground: @white;
+@footerBackground: @white;
+
+@cellVerticalPadding: 1em;
+@cellHorizontalPadding: 1em;
+
+@stateMarkerWidth: 1px;

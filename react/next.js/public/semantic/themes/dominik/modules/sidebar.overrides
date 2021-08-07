@@ -1,0 +1,8 @@
+
+#__next .ui.pushable .ui.sidebar.menu {
+    background-color: @primaryColor;
+}
+
+#__next .ui.pushable .ui.sidebar.menu i{
+    color: @textColor;
+}

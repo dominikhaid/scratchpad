@@ -1,0 +1,212 @@
+
+
+.ui.labeled.input {
+  background-color: @white;
+  border: @borderWidth solid @borderColor;
+  border-radius: @borderRadius !important;
+}
+.ui.labeled.input input {
+  box-shadow: none !important;
+  border: none !important;
+}
+.ui.labeled.input .label {
+  font-weight: normal;
+  align-self: center;
+  font-size: 12px;
+  margin: @2px;
+  border-radius: @borderRadius !important;
+  padding: @relative5px @relative8px !important;
+}
+
+
+.ui.labeled.input.focused {
+  border-color: @focusBorderColor;
+  box-shadow: @focusBoxShadow;
+}
+.ui.labeled.input.focused .label {
+  background-color: #E1EAF5;
+  color: #4078C0;
+}
+
+#__next .ui.form input:not([type]), 
+#__next .ui.form input[type="date"], 
+#__next .ui.form input[type="datetime-local"], 
+#__next .ui.form input[type="email"], 
+#__next .ui.form input[type="number"], 
+#__next .ui.form input[type="password"], 
+#__next .ui.form input[type="search"], 
+#__next .ui.form input[type="tel"], 
+#__next .ui.form input[type="time"], 
+#__next .ui.form input[type="text"], 
+#__next .ui.form input[type="file"], 
+#__next .ui.form input[type="url"],
+#__next .ui.form select,
+#__next .ui.form textarea,
+#__next  select,
+#__next  textarea,
+#__next .ui.input > input,
+#__next .ui.selection.dropdown {
+color: @primaryColor;
+}
+
+#__next .ui.form input:not([type])::placeholder, 
+#__next .ui.form input[type="date"]::placeholder, 
+#__next .ui.form input[type="datetime-local"]::placeholder, 
+#__next .ui.form input[type="email"]::placeholder, 
+#__next .ui.form input[type="number"]::placeholder, 
+#__next .ui.form input[type="password"]::placeholder, 
+#__next .ui.form input[type="search"]::placeholder, 
+#__next .ui.form input[type="tel"]::placeholder, 
+#__next .ui.form input[type="time"]::placeholder, 
+#__next .ui.form input[type="text"]::placeholder, 
+#__next .ui.form input[type="file"]::placeholder, 
+#__next .ui.form input[type="url"]::placeholder,
+#__next .ui.form select::placeholder,
+#__next .ui.form textarea::placeholder,
+#__next  select::placeholder,
+#__next  textarea::placeholder,
+#__next .ui.input > input::placeholder,
+#__next .ui.selection.dropdown::placeholder {
+color: fade(@black,70);
+}
+
+
+#__next .ui.input > .ui.corner.label {
+  top: 0px;
+  right: 0px;
+}
+
+#__next .ui.labeled.input .corner.label {
+  font-size: 8px;
+  line-height: 8px;
+  padding: 7px 10px !important;
+}
+
+#__next .ui.icon.input > i.circular.icon {
+  top: 5px;
+  right: 9px;
+  font-size: 12px;
+}
+
+#__next .ui.action.input > .button, .ui.action.input > .buttons > .button {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: 35px;
+}
+
+#__next .ui.labeled.input {
+  border: none;
+  height: 35px;
+}
+
+#__next .ui.corner.label .icon {
+  top: 0.1em;
+}
+
+#__next .ui.input > input {
+  border: none;
+  box-shadow: none;
+}
+
+#__next .ui.basic.label {
+/*  color: @primaryColor;
+  border: none;*/
+  font-family: 'Roboto', sans-serif !important;
+  font-size: 1rem;
+}
+
+#__next .ui.labeled.input .label {
+  margin: 0px;
+  outline: none;
+  line-height: 1.21428571em;
+  padding: 0.39285714em 0.57142857em !important;
+  border-radius: 0.28571429rem;
+}
+
+#__next input {
+  height: 35px;
+}
+
+#__next .ui.labeled.input .label {
+  line-height: 15px;
+  padding: -0.607em 2.571em !important;
+}
+
+.ui.action.input button {
+  height: 35px;
+}
+
+#__next .ui.dropdown .menu > .item {
+  font-size: 0.8rem;
+}
+
+
+#__next .ui.labeled.input .label {
+  line-height: 23px;
+}
+
+
+
+#__next div.ui.input {
+  margin: 10px 10px 10px 10px;
+}
+
+#__next div.ui.labeled.input .label {
+  line-height: 15px;
+  padding: 9px 10px !important;
+}
+
+
+
+#__next .ui.labeled input, #__next .ui.action *, #__next .ui.icon input {
+  margin: 0px;
+}
+
+
+#__next div.ui.labeled {
+  margin: 10px 10px 10px 10px;
+    height: 35px;
+}
+
+
+
+#__next .ui.input .dropdown {
+  padding: 0px;
+}
+
+
+#__next .input .text {
+  font-size: 0.8rem;
+}
+
+
+#__next .ui.input .dropdown.icon {
+  padding: 0px !important;
+  top: 0px !important;
+}
+
+
+#__next .ui.input .dropdown {
+  padding: 0px 0px 0px 10px;
+  line-height: inherit;
+  min-height: inherit;
+  font-size: inherit;
+}
+
+
+#__next .ui.input .dropdown.icon {
+  padding: 0px 5px 0px 5px !important;
+  position: relative !important;
+  right: 0px !important;
+}
+
+#__next .ui.form .fields {
+  flex-wrap:wrap;
+}
+
+#__next .ui.form [class*="equal width"].fields > .field, .ui[class*="equal width"].form .fields > .field {
+  flex: 1 1 300px;
+  max-width: 300px;
+  margin-top: 1rem;
+}
+

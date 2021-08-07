@@ -1,0 +1,16 @@
+
+
+
+@stepsBorder: none;
+@stepsBorderRadius: @circularRadius;
+
+
+@border: none;
+@divider: none;
+@background: transparent;
+@borderRadius: @circularRadius;
+@iconDistance: 0.8em;
+@arrowDisplay: none;
+
+@activeBackground: @midWhite;
+@activeArrowDisplay: none;

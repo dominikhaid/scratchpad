@@ -1,0 +1,22 @@
+
+@background: transparent linear-gradient(transparent, rgba(0, 0, 0, 0.07));
+@verticalPadding: 1em;
+
+@arrowDisplay: none;
+@lastArrowDisplay: none;
+@activeArrowDisplay: block;
+@activeLastArrowDisplay: block;
+
+
+@stepsBackground: transparent;
+@stepsBoxShadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.15);
+
+
+@activeBackground: lighten(@black,5);
+@activeIconColor: @darkTextColor;
+
+
+@arrowTopOffset: 100%;
+@arrowRightOffset: 50%;
+@arrowBorderColor: @primaryColor;
+@arrowBorderWidth: 1px 1px @borderWidth @borderWidth;

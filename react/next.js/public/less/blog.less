@@ -1,0 +1,536 @@
+@import '../semantic/themes/dominik/globals/site.variables';
+
+#__next .menuItem {
+  overflow: hidden;
+  background: -moz-linear-gradient(
+    0% 50% 0deg,
+    rgba(0, 0, 0, 0.6) 0%,
+    rgba(0, 0, 0, 0.4) 21.06%,
+    rgba(0, 0, 0, 0.4) 29.43%,
+    rgba(0, 0, 0, 0.4) 78.27%,
+    rgba(0, 0, 0, 0.6) 100%
+  );
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.6) 0%,
+    rgba(0, 0, 0, 0.4) 21.06%,
+    rgba(0, 0, 0, 0.4) 29.43%,
+    rgba(0, 0, 0, 0.4) 78.27%,
+    rgba(0, 0, 0, 0.6) 100%
+  );
+  background: -webkit-gradient(
+    linear,
+    0% 50%,
+    100% 50%,
+    color-stop(0, rgba(0, 0, 0, 0.6)),
+    color-stop(0.2106, rgba(0, 0, 0, 0.4)),
+    color-stop(0.2943, rgba(0, 0, 0, 0.4)),
+    color-stop(0.7827, rgba(0, 0, 0, 0.4)),
+    color-stop(1, rgba(0, 0, 0, 0.6))
+  );
+  background: -o-linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.6) 0%,
+    rgba(0, 0, 0, 0.4) 21.06%,
+    rgba(0, 0, 0, 0.4) 29.43%,
+    rgba(0, 0, 0, 0.4) 78.27%,
+    rgba(0, 0, 0, 0.6) 100%
+  );
+  background: -ms-linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.6) 0%,
+    rgba(0, 0, 0, 0.4) 21.06%,
+    rgba(0, 0, 0, 0.4) 29.43%,
+    rgba(0, 0, 0, 0.4) 78.27%,
+    rgba(0, 0, 0, 0.6) 100%
+  );
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#000000' ,GradientType=0)";
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.6) 0%,
+    rgba(0, 0, 0, 0.4) 21.06%,
+    rgba(0, 0, 0, 0.4) 29.43%,
+    rgba(0, 0, 0, 0.4) 78.27%,
+    rgba(0, 0, 0, 0.6) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=  '#000000',endColorstr='#000000' , GradientType=1);
+}
+
+#__next .menuItem img {
+  top: 0;
+  opacity: 0.5;
+  z-index: 0;
+  width: 100%;
+  height: inherit;
+  z-index: -1;
+}
+
+#__next .menuItemDesc {
+  width: 100%;
+  overflow: hidden;
+  left: 0;
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+  z-index: 0;
+  border-bottom: 1px solid #d26f1c;
+}
+
+#__next .menuItem {
+  position: relative;
+  box-sizing: border-box;
+  margin: 0.5rem;
+  overflow: hidden;
+  height: auto;
+  cursor: pointer;
+  max-width: 45%;
+  flex: 1 1 45%;
+  width: 45%;
+  margin: 0;
+  margin: 5px;
+  padding: 0px;
+}
+
+#__next .menuItem:hover .menuItemTitle {
+  top: 0;
+  margin-bottom: 0 !important;
+  color: @white !important;
+}
+
+#__next a.menuItemExcerpt {
+  font-size: 1rem;
+  padding: 0.8rem;
+  background-color: @darkGray;
+  opacity: 0;
+  transition-property: opacity;
+  transition-duration: 0.5s;
+  overflow: hidden;
+  color: white;
+  line-height: 1.2;
+  display: none;
+  height: calc(100% - 55px);
+  top: 55px;
+  width: 100%;
+}
+
+#__next .menuItem:hover .menuItemExcerpt {
+  display: block;
+  opacity: 1;
+}
+
+#__next .menuItemTitle span {
+  position: absolute;
+  right: 0;
+  font-size: 0.6rem;
+  color: @primaryColor;
+  background-color: @black;
+  padding: 0.3rem;
+  top: 0;
+  z-index: 10;
+}
+
+#__next .menuItem.active {
+  background: transparent;
+}
+
+#__next .menuItem.active .menuItemExcerpt,
+#__next .menuItem.active .menuItemTitle {
+  display: none;
+  opacity: 0;
+}
+
+#blog-content,
+#blogContent,
+#blogDes {
+  width: 100%;
+}
+
+#blogWrapper {
+  width: 100%;
+  padding: 1.5rem;
+}
+
+#__next #blog-menu .ui.menu .item,
+#__next #blogTabMenu .ui.menu {
+  line-height: 1;
+  padding: 1rem;
+  min-width: 1rem;
+  border-width: 0 0 1px 0;
+  margin: 0;
+  min-height: 0 !important;
+}
+
+#__next .ui.menu {
+  min-height: 0;
+}
+
+#__next #blogTabMenu .menu.secondary .item.active,
+#__next #blogTabMenu .menu.secondary .item:hover {
+  background: none;
+}
+
+#blogTabMenu .ui.attached.menu:not(.tabular) {
+  border-bottom: none;
+}
+
+.wp-block-gallery ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  padding: 0;
+}
+
+.wp-block-gallery li {
+  text-decoration: none;
+  display: inline-block;
+  flex-grow: 1;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  position: relative;
+  display: inline-block;
+  width: 6.25%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  vertical-align: top;
+  transition-property: all;
+  transition-duration: 0.2s;
+  cursor: pointer;
+  min-width: 300px;
+  // max-width: 700px;
+}
+
+.blocks-gallery-item__caption {
+  font-size: 0.8rem;
+  line-height: 1rem;
+}
+
+.wp-block-gallery figure img {
+  width: 100%;
+  height: auto;
+}
+
+.wp-block-gallery li figure {
+  display: grid;
+  justify-content: center;
+}
+
+.wp-block-gallery figure img:hover,
+.wp-block-gallery li.active img {
+  box-shadow: 0 0 10px @subtleTransparentBlack;
+  // filter: grayscale(0);
+}
+
+.wp-block-gallery img {
+  transition-property: all;
+  transition-duration: 0.2s;
+  cursor: pointer;
+  min-width: 200px;
+}
+
+.wp-block-gallery li.active {
+  flex-grow: 10 !important;
+  min-width: 100%;
+}
+
+.wp-block-gallery li figcaption {
+  background-color: @fullBlack;
+  padding: 0.5rem;
+  font-weight: bold;
+  text-align: center;
+  word-break: keep-all;
+  hyphens: none;
+  display: none;
+}
+
+.pubCat,
+.pubDate {
+  font-size: 1rem;
+  float: right;
+  margin-right: 1rem;
+}
+
+#blog-menu > div {
+  margin: 0;
+  padding: 0.5rem;
+}
+
+#__next #panePrevNext.ui.menu {
+  box-shadow: unset;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  width: max-content;
+  background-color: transparent;
+  padding: 1.5rem 0 0;
+  cursor: pointer;
+}
+
+#__next #panePrevNext #lastPane,
+#__next #panePrevNext #nextPane {
+  flex: 1 1 max-content;
+  text-align: center;
+  display: block;
+  width: max-content;
+  min-width: 95px;
+}
+
+#__next #panePrevNext a#lastPane.item:hover,
+#__next #panePrevNext a#nextPane.item:hover {
+  background-color: transparent;
+  color: @white;
+  border-bottom: 1px solid @primaryColor;
+  border-radius: 0px;
+}
+
+#__next #panePrevNext.ui.menu .item::before {
+  right: unset;
+  height: 100%;
+  left: 0;
+}
+
+/*#__next #blog-menu .ui.menu a,*/
+#__next #panePrevNext a#nextPane.item,
+#threeNavCon.ui.pagination.menu a {
+  color: white;
+  border-bottom: none;
+}
+
+#__next #blog-menu .menuItem img {
+  filter: grayscale(100);
+  opacity: 0.5;
+  z-index: 1;
+}
+
+#__next #blog-menu .menuItem:hover img,
+#__next #blog-menu > div:first-child > div:first-child img {
+  filter: grayscale(0);
+}
+
+#__next #blog-menu {
+  padding: 0;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+#blog-menu > div {
+  width: 100%;
+}
+
+#blog-menu > div.item,
+#blog-menu div.list .item {
+  overflow: hidden;
+ padding: 0px;
+ background-color: @subtleTransparentBlack;
+}
+
+#blog-menu div.list .item >div {
+margin: 0 0 0.5rem 0;
+}
+
+
+#blogDes {
+  position: relative;
+}
+
+#lastViewed {
+  position: absolute;
+  bottom: -8rem;
+  right: 2rem;
+}
+
+#lastViewed p {
+  padding: 0.2em 1em;
+  border-radius: 0;
+}
+
+#__next #blog-menu #blogMenuFirstItem .menuItemExcerpt {
+  opacity: 1;
+  display: block;
+}
+
+#__next #blog-menu #blogMenuFirstItem .menuItem img.image {
+  opacity: 1;
+}
+
+#__next #blog-menu #blogMenuFirstItem .menuItemTitle {
+  top: 0;
+}
+
+#activeBlogMenuHeader span small {
+  display: block;
+  float: right;
+  font-size: 0.6rem;
+}
+
+#activeBlogMenuHeader span small {
+  margin: 0;
+}
+
+#activeBlogMenuHeader span small:nth-child(2),
+#activeBlogMenuHeader span small:nth-child(3) {
+  display: none;
+}
+
+#blog-menu div.marked {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: @transparentBlack;
+  z-index: 9;
+}
+
+#__next #blog-menu div.marked i {
+  font-size: 7rem;
+  text-align: right;
+  color: rgba(255, 255, 255, 0.05);
+  margin-top: 2rem;
+  margin-left: 16rem;
+}
+
+small.newPost {
+  margin-right: 0.5rem;
+  color: @black;
+  font-size: 1rem;
+}
+
+#__next .ui.vertical.menu .active.item::after {
+  display: none;
+}
+
+#__next .ui.vertical.menu a.active.item {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.4) 0.56%,
+    rgba(0, 0, 0, 0.34) 8.13%,
+    rgba(0, 0, 0, 0) 53.35%,
+    rgba(0, 0, 0, 0.37) 96.14%,
+    rgba(0, 0, 0, 0.4) 100%
+  );
+  border-style: Solid;
+  border-color: @primaryColor;
+  border-width: 2px;
+  border-top-width: 2px;
+  border-bottom-width: 2px;
+  border-left-width: 2px;
+  border-right-width: 0;
+  box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.2) inset;
+}
+
+#__next .ui.menu .item {
+  margin-top: 5px;
+}
+
+#__next .ui.segment .ui.vertical.menu {
+  width: calc(100% + 3rem);
+  overflow: hidden;
+  margin-left: -0.7rem;
+}
+
+#__next .ui.menu .menu {
+  overflow: hidden;
+}
+
+#__next #Datenblatt td {
+  min-width: 300px;
+}
+
+.ui.list .list > .item,
+.ui.list > .item,
+ol.ui.list li,
+ul.ui.list li {
+  padding-bottom: 4px;
+}
+
+#__next .menuItemTitle span {
+  left: 0px;
+  font-size: 0.8rem;
+  top: -5px;
+  padding: 0.3rem;
+}
+
+#__next .ui.huge.middle.aligned.list .menuItem img {
+  display: none !important;
+}
+
+#__next #blogMenuFirstItem .menuItemDesc {
+  display: none !important;
+}
+
+.ui.list .list > .item:first-child,
+.ui.list > .item:first-child,
+ol.ui.list li:first-child,
+ul.ui.list li:first-child {
+  padding-top: 0px;
+}
+
+.ui.list .list > .item,
+.ui.list > .item,
+ol.ui.list li,
+ul.ui.list li {
+  padding-bottom: 0px;
+}
+
+#__next .menuItemTitle {
+  font-size: 0.8rem;
+  line-height: 2.5rem;
+  background-color: transparent;
+  position: relative;
+  padding: 0rem 2.3rem 0rem 5rem;
+  left: 0;
+  display: block;
+  letter-spacing: 0;
+  transition-property: top background-color;
+  transition-duration: 0.2s;
+  color: @white !important;
+  bottom: 0;
+  width: 100%;
+  text-align: left;
+}
+
+#__next .menuItemTitle small {
+  margin-left: -5px;
+  margin-right: 5px;
+  font-weight: bold;
+  color: @primaryColor;
+}
+
+#__next .menuItemTitle span {
+  color: @white;
+  background-color: @primaryColor;
+  top: 0px;
+  width: max-content;
+  left: 0rem;
+  border: 1px solid @primaryColor;
+  font-size: 0.6rem;
+  padding-bottom: 0rem;
+  height: 100%;
+  line-height: 1.7rem;
+}
+
+#__next .menuItem.flex-item-1 {
+max-width: 100% !important;
+  width: 100%;
+}
+
+#__next #blog-menu.ui.vertical.menu > .item {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+#__next .activePostThumb {
+background-color: @darkGray !important;
+padding: 1rem !important;
+}
+
+
+#__next .activePostThumb img {
+	max-width: 450px;
+	margin-left: auto;
+	display: block;
+	margin-right: auto;
+}

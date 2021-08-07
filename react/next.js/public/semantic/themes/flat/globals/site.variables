@@ -1,0 +1,91 @@
+
+
+
+
+@imagePath : "images";
+@fontPath  : "fonts";
+
+
+
+@headerFont    : "Open Sans", "Helvetica Neue", Arial, Helvetica, sans-serif;
+@pageFont      : "Open Sans", "Helvetica Neue", Arial, Helvetica, sans-serif;
+@fontSmoothing : antialiased;
+
+
+
+
+@blue             : #0074D9;
+@green            : #2EAC3C;
+@orange           : #FF851B;
+@pink             : #D9499A;
+@purple           : #A24096;
+@red              : #FF4136;
+@teal             : #39CCCC;
+@yellow           : #FFCB08;
+
+@black            : #191919;
+@grey             : #CCCCCC;
+@white            : #FFFFFF;
+
+
+@lightBlue        : #54C8FF;
+@lightGreen       : #2ECC40;
+@lightOrange      : #FF851B;
+@lightPink        : #FF8EDF;
+@lightPurple      : #CDC6FF;
+@lightRed         : #FF695E;
+@lightTeal        : #6DFFFF;
+@lightYellow      : #FFE21F;
+
+@primaryColor     : @blue;
+@secondaryColor   : @black;
+
+
+
+
+@bodyBackground      : #FCFCFC;
+@fontSize            : 14px;
+@textColor           : rgba(0, 0, 0, 0.8);
+
+@headerMargin        : 1em 0em 1rem;
+@paragraphMargin     : 0em 0em 1em;
+
+@linkColor           : #009FDA;
+@linkUnderline       : none;
+@linkHoverColor      : lighten( @linkColor, 5);
+@linkHoverUnderline  : @linkUnderline;
+
+@highlightBackground : #FFFFCC;
+@highlightColor      : @textColor;
+
+
+
+
+
+@subtleTransparentBlack : rgba(0, 0, 0, 0.07);
+@transparentBlack       : rgba(0, 0, 0, 0.05);
+@strongTransparentBlack : rgba(0, 0, 0, 0.10);
+
+@subtleTransparentWhite : rgba(255, 255, 255, 0.01);
+@transparentWhite       : rgba(255, 255, 255, 0.05);
+@strongTransparentWhite : rgba(255, 255, 255, 0.01);
+
+
+@subtleGradient: linear-gradient(transparent, rgba(0, 0, 0, 0.05));
+
+
+@subtleShadow: 0px 1px 2px 0 rgba(0, 0, 0, 0.05);
+
+
+
+
+@columnCount: 16;
+
+
+
+@mobileBreakpoint            : 320px;
+@tabletBreakpoint            : 768px;
+@computerBreakpoint          : 992px;
+@largeMonitorBreakpoint      : 1400px;
+@widescreenMonitorBreakpoint : 1900px;
+

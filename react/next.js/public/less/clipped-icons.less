@@ -1,0 +1,77 @@
+@import '../semantic/themes/dominik/globals/site.variables';
+
+p.globe-shape::after {
+  content: '\f0ac';
+  shape-outside: circle(42.08% at 103px 122px) border-box;
+  float: right;
+  height: 20rem;
+  font-size: 11rem;
+  width: 21%;
+  margin: 3rem;
+  color: @primaryColor;
+  font-family: 'Icons';
+  font-style: normal;
+  font-weight: normal;
+  text-align: center;
+}
+
+.icon.cliped::before {
+  height: 11rem !important;
+  float: right;
+}
+
+#__next .icon.cliped {
+  font-family: Arial;
+	width: 100%;
+	line-height: 1.5rem;
+}
+
+.icon.cliped::before {
+  height: 21rem !important;
+  font-family: 'Icons';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12rem;
+  margin: 5rem 2rem;
+  shape-outside: circle(40.27% at 112px 96px) border-box;
+  width: 11rem;
+  text-align: center;
+  padding: 5rem 2rem;
+  opacity: 0.2;
+}
+
+#__next .icon.cliped {
+  font-family: 'Share Tech', sans-serif;
+  color: @white !important;
+  height: auto;
+  text-align: left;
+}
+
+.icon.cliped::before {
+  height: 23rem !important;
+  font-size: 18rem;
+  margin: 2rem;
+  width: 10rem;
+  padding: 5.5rem 1rem;
+  opacity: 0.1;
+}
+
+.icon.globe.cliped::before {
+  shape-outside: circle(40.27% at 112px 96px) border-box;
+}
+
+.icon.file.cliped::before {
+  shape-outside: polygon(
+      68.45% -6.78%,
+      100.71% 16.53%,
+      100.26% 79.55%,
+      -5.32% 79.06%,
+      -11.26% 38.54%,
+      -10.63% -8.7%
+    )
+    border-box;
+  padding: 8.5rem 0;
+  float: left;
+  margin-left: -1rem;
+  width: 16rem;
+}

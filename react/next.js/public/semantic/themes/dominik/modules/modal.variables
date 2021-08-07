@@ -1,0 +1,14 @@
+@boxShadow: 0px 10px 18px rgba(0, 0, 0, 0.22);
+@borderRadius: 4px;
+
+
+@headerBackground: @white;
+@headerVerticalPadding: 1.7142rem;
+@headerHorizontalPadding: 1.7142rem;
+@headerFontWeight: 400;
+@headerBorder: none;
+
+@contentPadding: 1rem 2rem 2rem;
+
+@actionBorder: none;
+@actionBackground: @white;

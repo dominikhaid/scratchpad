@@ -1,0 +1,153 @@
+.ui.menu .item > .label {
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1) inset;
+}
+
+#__next .ui.menu .dropdown.item .menu {
+background-color: @lightGray;
+}
+
+#__next .ui.pointing.secondary.menu,
+#__next .ui.top.attached.tabular.menu {
+ background-color: @primaryColor;
+}
+#__next .ui.compact.labeled.icon.menu {
+ height: inherit;
+}
+
+#__next .ui.menu .icon,
+#__next .ui.menu a.active.item,
+#__next .menu.secondary .item  {    
+  color:@white;
+}
+
+#__next .ui.menu a {    
+  color: @black;
+}
+
+#__next .ui.secondary.vertical.pointing.menu .active.item,
+#__next .ui.secondary.pointing.menu .active.item {
+    border-color: @white;
+}
+
+.ui.vertical.menu .active.item::after {
+    background-color:  @primaryColor;
+}
+
+.ui.vertical.menu .active.item::after {
+    visibility: visible;
+}
+
+
+#__next .ui.vertical.menu .item {
+background: transparent;
+color:@white;
+}
+
+.ui.vertical.menu .item::after {
+    visibility: hidden;
+    position: absolute;
+    content: ' ';
+    top: 0em;
+    right: -2em;
+    background: none;
+    background-color: @primaryColor;
+    margin: 0.5px 0em 0em;
+    border: none;
+    border-bottom: 1px solid @primaryColor;
+    border-right: 1px solid @primaryColor;
+    z-index: 2;
+    transition: background 0.1s ease;
+    transform: none;
+    width: 2.15em;
+    height: 2.15em;
+}
+
+
+.ui.vertical.labeled.icon.menu .item::after {
+    visibility: hidden;
+    top: 50%;
+    right: -10px;
+}
+
+
+
+.ui.secondary.menu {
+  border: 1px @primaryColor solid;
+}
+
+#__next .menu.secondary .item {
+  background: @darkGray;
+}
+
+#__next .menu.secondary .item:hover,
+#__next .menu.secondary .item.active, {
+  background: @lightPrimary;
+}
+
+#__next .menu.secondary .item {
+  background: transparent;
+  color: @black;
+}
+
+#__next .menu .right > *,
+#__next .tabular.menu .menu.right > *,
+ #__next .menu .right,
+#__next .tabular.menu .menu.right{
+   background:transparent !important;
+}
+
+#__next .menu .right > a,
+#__next .tabular.menu .menu.right > a {
+   margin-right: 1px;
+    margin-bottom: -1px;
+}
+
+#__next .ui.menu .item::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  right: -5px;
+  height: 100%;
+  width: 1px;
+  background:transparent;
+}
+
+#blog-menu,
+#threeNavCon.ui.pagination.menu {
+  background-color: @black;
+  overflow: hidden;
+
+}
+
+#blog-menu .ui.pagination.menu,
+#threeNavCon.ui.pagination.menu {
+  margin-bottom: 1rem;
+  z-index: 999;
+}
+
+#__next #blog-menu .ui.menu a,
+#__next #blogTabMenu .ui.menu a,
+#threeNavCon.ui.pagination.menu a {
+  color: white;
+  border-bottom: 2px solid @primaryColor;
+}
+
+#__next #blog-menu .ui.menu a.active.item,
+#__next #blogTabMenu .ui.menu a.active.item,
+#threeNavCon.ui.pagination.menu a.item.active {
+  color: @primaryColor;
+  text-align: center;
+}
+
+#__next #blog-menu .ui.menu,
+#__next #blogTabMenu .ui.menu {
+  background: rgba(0,0,0,0.2);
+  background-color: none;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+#threeNavCon.ui.pagination.menu {
+  background: rgba(0,0,0,0.8);
+  background-color: none;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+}

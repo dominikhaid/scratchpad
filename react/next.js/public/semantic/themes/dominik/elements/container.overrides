@@ -1,0 +1,14 @@
+@media only screen and (min-width: 992px) and (max-width: 1699px) {
+  #__next .ui.container {
+   width: 100%;
+  }
+  #__next .ui.grid.container {
+    width: 100% !important;
+  }
+  #__next .ui.relaxed.grid.container {
+    width:100% !important;
+  }
+  #__next .ui.very.relaxed.grid.container {
+    width: 100% !important;
+  }
+}

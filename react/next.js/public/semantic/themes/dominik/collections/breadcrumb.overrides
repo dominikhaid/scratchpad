@@ -1,0 +1,3 @@
+#__next .breadcrumb a.section {
+    color: fade(@textColor, 40%);
+}
