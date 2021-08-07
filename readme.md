@@ -1,4 +1,4 @@
-# ScratchPAd for all kinds of stuff.
+# ScratchPad for all kinds of stuff.
 
 ## Description
 Some old stuff merged together. This will be our place to scratch things.
