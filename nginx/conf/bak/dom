@@ -1,0 +1,396 @@
+include /var/www/vhosts/v98240.1blu.de/httpdocs/conf/headers.conf;
+include /var/www/vhosts/v98240.1blu.de/httpdocs/conf/perocmance.conf;
+
+
+
+add_header X-Frame-Options "allow-from https://dev.dominikhaid.de/";
+add_header Strict-Transport-Security "max-age=15552000; includeSubDomains; preload;" always;
+# add_header Content-Security-Policy "default-src 'self' 'unsafe-inline' https://fonts.googleapis.com/; script-src 'self' https://s-usc1c-nss-234.firebaseio.com/ https://apis.google.com/ https://dominikhaid-1576294119040.firebaseio.com/ https://fast.wistia.com/ https://s-usc1c-nss-235.firebaseio.com/ 'unsafe-inline' 'unsafe-eval'; connect-src 'self' https://www.dominikhaid.de/  https://dev.dominikhaid.de/ wss://s-usc1c-nss-235.firebaseio.com/ wss://s-usc1c-nss-234.firebaseio.com/ ; font-src 'self' https://fonts.gstatic.com/ data: application/x-font-woff: 'unsafe-inline'; img-src 'self' https://images2.imgbox.com/ https://secure.gravatar.com/; blob: https://www..dominikhaid.de; frame-src 'self' https://dev.dominikhaid.de/ https://s-usc1c-nss-234.firebaseio.com/ https://s-usc1c-nss-235.firebaseio.com/ https://www.youtube.com/";
+
+add_header Feature-Policy "geolocation 'none';  midi 'none'; sync-xhr 'none'; microphone 'none'; camera 'none'; magnetometer 'none'; gyroscope 'none'; fullscreen 'none'; payment 'none';"; 
+
+
+ location ^~ /html {	  
+	#auth_basic           "RESTRICTED AREA";
+    #auth_basic_user_file /var/www/vhosts/v98240.1blu.de/httpdocs/conf/.htpasswd;
+	root /var/www/vhosts/dominikhaid.de/dev.dominikhaid.de;
+    #index lighthouse.html;
+    try_files $uri /$uri  /404;
+}
+
+
+
+ location ^~ /app/bingo {	  
+	root /var/www/vhosts/dominikhaid.de/dev.dominikhaid.de/app/bingo;
+    index index.html;
+    try_files $uri /index.html  /404;
+}
+
+ location  ^~ /app/bingo/static {	  
+	root /var/www/vhosts/dominikhaid.de/dev.dominikhaid.de;
+        #index index.html;
+        try_files $uri /$uri /404;
+    }
+
+ location ^~ /app/angular-demo/de/dashboard {	  
+	root /var/www/vhosts/dominikhaid.de/dev.dominikhaid.de/app/angular-demo/en;
+    index index.html;
+    try_files $uri /index.html  /404;
+}
+
+ location ^~ /app/angular-demo/en/dashboard {	  
+	root /var/www/vhosts/dominikhaid.de/dev.dominikhaid.de/app/angular-demo/en;
+    index index.html;
+    try_files $uri /index.html  /404;
+}
+
+ location ^~ /app/angular-demo/en/heroes {	  
+	root /var/www/vhosts/dominikhaid.de/dev.dominikhaid.de/app/angular-demo/en;
+    index index.html;
+    try_files $uri /index.html  /404;
+}
+
+ location ^~ /app/angular-demo/de/heroes {	  
+	root /var/www/vhosts/dominikhaid.de/dev.dominikhaid.de/app/angular-demo/en;
+    index index.html;
+    try_files $uri /index.html  /404;
+}
+
+ location ^~ /app/angular-demo/de/detail {	  
+	root /var/www/vhosts/dominikhaid.de/dev.dominikhaid.de/app/angular-demo/en;
+    index index.html;
+    try_files $uri /index.html  /404;
+}
+
+  location ^~ /app/angular-demo/en/detail {	  
+	root /var/www/vhosts/dominikhaid.de/dev.dominikhaid.de/app/angular-demo/en;
+    index index.html;
+    try_files $uri /index.html  /404;
+}
+ 
+ location ^~ /app/angular-demo {	  
+	root /var/www/vhosts/dominikhaid.de/dev.dominikhaid.de/app/angular-demo/en;
+    index index.html;
+    try_files $uri /index.html  /404;
+}
+
+ location ^~ /app/angular-demo/de {	  
+	root /var/www/vhosts/dominikhaid.de/dev.dominikhaid.de/app/angular-demo/de;
+    index index.html;
+    try_files $uri /index.html  /404;
+}
+
+ location ^~ /app/angular-demo/de/ {	  
+	root /var/www/vhosts/dominikhaid.de/dev.dominikhaid.de;
+    try_files $uri /$uri /404;
+}
+
+ location ^~ /app/angular-demo/en {	  
+	root /var/www/vhosts/dominikhaid.de/dev.dominikhaid.de/app/angular-demo/en;
+    index index.html;
+    try_files $uri /index.html  /404;
+}
+
+ location ^~ /app/angular-demo/en/ {	  
+	root /var/www/vhosts/dominikhaid.de/dev.dominikhaid.de;
+    try_files $uri /$uri /404;
+}
+
+
+ location ^~ /app/nuxt-blog {	  
+	root /var/www/vhosts/dominikhaid.de/dev.dominikhaid.de/app/nuxt-blog;
+    index index.html;
+    try_files $uri /index.html  /404;
+}
+
+ location ^~ /app/nuxt-blog/static {	  
+	root /var/www/vhosts/dominikhaid.de/dev.dominikhaid.de;
+	try_files $uri /$uri /404;
+}
+
+ location ^~ /app/nuxt-blog/css {	  
+	root /var/www/vhosts/dominikhaid.de/dev.dominikhaid.de;
+	try_files $uri /$uri /404;
+}
+
+ location ^~ /app/nuxt-blog/js {	  
+	root /var/www/vhosts/dominikhaid.de/dev.dominikhaid.de;
+	try_files $uri /$uri /404;
+}
+
+ location ^~ /app/nuxt-blog/images {	  
+	root /var/www/vhosts/dominikhaid.de/dev.dominikhaid.de;
+ 	try_files $uri /$uri /404;
+}
+
+ location ^~ /app/nuxt-blog/fonts {	  
+	root /var/www/vhosts/dominikhaid.de/dev.dominikhaid.de;
+	try_files $uri /$uri /404;
+}
+
+	location ^~ /app/demo-shop  {
+	    auth_basic off;
+        proxy_read_timeout    90;
+	    proxy_connect_timeout 90;
+	    proxy_redirect        off;
+	    proxy_pass http://172.29.0.65:80;
+
+ 
+		proxy_set_header Referer $http_referer;
+		proxy_set_header X-Forwarded-For $remote_addr;
+		# proxy_set_header X-Script-Name /chat;
+		proxy_set_header      X-Real-IP $remote_addr;
+	    proxy_set_header      X-Forwarded-For $proxy_add_x_forwarded_for;
+	    proxy_set_header      X-Forwarded-Proto $scheme;
+	    proxy_set_header      Host $host;
+    }
+
+
+location = /app/weather-app/manifest.json  {
+	   root /var/www/vhosts/dominikhaid.de/dev.dominikhaid.de;
+       try_files $uri /$uri /404;
+}
+
+location = /app/weather-app/icon192.png {
+	   root /var/www/vhosts/dominikhaid.de/dev.dominikhaid.de;
+       try_files $uri /$uri /404;
+}
+
+location =  /app/weather-app/icon512.png {
+	   root /var/www/vhosts/dominikhaid.de/dev.dominikhaid.dev;
+       try_files $uri /$uri /404;
+}
+
+location = /app/weather-app/favicon.ico {
+	   root /var/www/vhosts/dominikhaid.de/dev.dominikhaid.de;
+       try_files $uri /$uri /404;
+}
+
+
+
+ location ^~ /app/weather-app {	  
+	root /var/www/vhosts/dominikhaid.de/dev.dominikhaid.de/app/weather-app;
+    index index.html;
+    try_files $uri /index.html  /404;
+}
+
+ location ^~ /app/weather-app/fonts{	  
+	root /var/www/vhosts/dominikhaid.de/dev.dominikhaid.de;
+    try_files $uri /$uri /404;
+}
+
+ location ^~ /app/weather-app/images{	  
+	root /var/www/vhosts/dominikhaid.de/dev.dominikhaid.de;
+    try_files $uri /$uri /404;
+}
+
+
+ location ^~ /app/weather-app/_next/ {	  
+	root /var/www/vhosts/dominikhaid.de/dev.dominikhaid.de;
+	try_files $uri /$uri /404;
+}
+
+
+ location ^~ /app/storybook {	  
+	root /var/www/vhosts/dominikhaid.de/dev.dominikhaid.de/app/storybook;
+  index index.html;
+    try_files $uri /index.html  /404;
+}
+
+
+ location ^~ /app/storybook/ {	  
+	root /var/www/vhosts/dominikhaid.de/dev.dominikhaid.de/app/storybook;
+try_files $uri /index.html  /404;
+}
+
+ location ^~ /app/space-x {	  
+	root /var/www/vhosts/dominikhaid.de/dev.dominikhaid.de/app/space-x;
+    index index.html;
+    try_files $uri /index.html  /404;
+}
+
+
+
+ location  ^~ /app/space-x/static/ {	  
+     	root /var/www/vhosts/dominikhaid.de/dev.dominikhaid.de;
+        #index index.html;
+        try_files $uri /$uri /404;
+    }
+
+ location  ^~ /space-x/static/media {	  
+	   root /var/www/vhosts/dominikhaid.de/httpdocs/dominikhaid-build;
+        #index index.html;
+        try_files $uri /$uri index.html /404;
+    }
+
+
+location ^~ / {
+
+	auth_basic off;
+    proxy_read_timeout    90;
+	proxy_connect_timeout 90;
+	proxy_redirect        off;
+	proxy_pass http://172.29.0.55:80;
+
+ 
+	proxy_set_header Referer $http_referer;
+	proxy_set_header X-Forwarded-For $remote_addr;
+	proxy_set_header      X-Real-IP $remote_addr;
+	proxy_set_header      X-Forwarded-For $proxy_add_x_forwarded_for;
+	proxy_set_header      X-Forwarded-Proto $scheme;
+	proxy_set_header      Host $host;
+}
+
+
+location ^~ /fonts {
+    try_files $uri /$uri 404;
+}
+
+
+	location ^~ /chat {
+	    auth_basic off;
+        proxy_read_timeout    90;
+	    proxy_connect_timeout 90;
+	    proxy_redirect        off;
+	    proxy_pass http://178.254.31.13:8004;
+
+ 
+		proxy_set_header Referer $http_referer;
+		proxy_set_header X-Forwarded-For $remote_addr;
+		proxy_set_header X-Script-Name /chat;
+		proxy_set_header      X-Real-IP $remote_addr;
+	    proxy_set_header      X-Forwarded-For $proxy_add_x_forwarded_for;
+	    proxy_set_header      X-Forwarded-Proto $scheme;
+	    proxy_set_header      Host $host;
+    }
+
+
+
+
+location ^~ /wordpress {
+
+	location ^~ /wordpress/wp-cron.php {
+    
+	    auth_basic off;
+	    set $no_cache 1;
+        proxy_read_timeout    90;
+	    proxy_connect_timeout 90;
+	    #proxy_redirect        off;
+
+        # index index.php;
+        # try_files $uri $uri/ $fastcgi_script_name /index.php /index.php?$args;
+		proxy_set_header Referer $http_referer;
+		proxy_set_header X-Forwarded-For $remote_addr;
+		proxy_set_header      X-Real-IP $remote_addr;
+	    proxy_set_header      X-Forwarded-For $proxy_add_x_forwarded_for;
+	    proxy_set_header      X-Forwarded-Proto $scheme;
+	    proxy_set_header      Host $host;
+        proxy_pass http://172.29.0.32:80;
+	}
+
+
+	location ^~ /wordpress/wp-content/uploads {
+    
+	    auth_basic off;
+	    set $no_cache 1;
+        proxy_read_timeout    90;
+	    proxy_connect_timeout 90;
+	    #proxy_redirect        off;
+
+        # index index.php;
+        # try_files $uri $uri/ $fastcgi_script_name /index.php /index.php?$args;
+		proxy_set_header Referer $http_referer;
+		proxy_set_header X-Forwarded-For $remote_addr;
+		proxy_set_header      X-Real-IP $remote_addr;
+	    proxy_set_header      X-Forwarded-For $proxy_add_x_forwarded_for;
+	    proxy_set_header      X-Forwarded-Proto $scheme;
+	    proxy_set_header      Host $host;
+        proxy_pass http://172.29.0.32:80;
+	}
+
+
+	location ^~ /wordpress/wp-admin/ {
+        auth_basic           "RESTRICTED AREA";
+    	auth_basic_user_file /var/www/vhosts/v98240.1blu.de/httpdocs/conf/.htpasswd;
+     
+	    set $no_cache 1;
+        proxy_read_timeout    90;
+	    proxy_connect_timeout 90;
+	    #proxy_redirect        off;
+
+        # index index.php;
+        # try_files $uri $uri/ $fastcgi_script_name /index.php /index.php?$args;
+		proxy_set_header Referer $http_referer;
+		proxy_set_header X-Forwarded-For $remote_addr;
+		proxy_set_header      X-Real-IP $remote_addr;
+	    proxy_set_header      X-Forwarded-For $proxy_add_x_forwarded_for;
+	    proxy_set_header      X-Forwarded-Proto $scheme;
+	    proxy_set_header      Host $host;
+        proxy_pass http://172.29.0.32:80;
+	}
+
+
+	location /wordpress/graphql {
+		if ($request_method = OPTIONS) {
+        	add_header Content-Length 0;
+        	add_header Content-Type text/plain;
+        	add_header Access-Control-Allow-Methods "GET, POST, PUT, DELETE, OPTIONS";
+        	add_header Access-Control-Allow-Origin $http_origin;
+        	add_header Access-Control-Allow-Headers "Authorization, Content-Type";
+       		add_header Access-Control-Allow-Credentials true;
+        	return 200;
+    	}
+
+        auth_basic           "RESTRICTED AREA";
+    	auth_basic_user_file /var/www/vhosts/v98240.1blu.de/httpdocs/conf/.htpasswd;
+
+		proxy_set_header Referer $http_referer;
+		proxy_set_header X-Forwarded-For $remote_addr;
+		proxy_set_header      X-Real-IP $remote_addr;
+	    proxy_set_header      X-Forwarded-For $proxy_add_x_forwarded_for;
+	    proxy_set_header      X-Forwarded-Proto $scheme;
+	    proxy_set_header      Host $host;
+        proxy_pass http://172.29.0.32:80;
+	}
+
+
+        auth_basic           "RESTRICTED AREA";
+    	auth_basic_user_file /var/www/vhosts/v98240.1blu.de/httpdocs/conf/.htpasswd;
+		#auth_basic off;
+        proxy_read_timeout    90;
+	    proxy_connect_timeout 90;
+	    proxy_redirect        off;
+	    proxy_pass http://172.29.0.32:80;
+
+ 	    #proxy_set_header X-Script-Name /wordpress;
+	    proxy_set_header Referer $http_referer;
+	    proxy_set_header X-Forwarded-For $remote_addr;
+	    proxy_set_header      X-Real-IP $remote_addr;
+	    proxy_set_header      X-Forwarded-For $proxy_add_x_forwarded_for;
+	    proxy_set_header      X-Forwarded-Proto $scheme;
+	    proxy_set_header      Host $host;
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+include /var/www/vhosts/v98240.1blu.de/httpdocs/conf/security.conf;
+
+ 
+# # # Don't cache uris containing the following segments
+if ($request_uri ~* "(/wp-admin/|/xmlrpc.php|/wp-(app|cron|login|register|mail).php|wp-.*.php|/feed/|index.php|wp-comments-popup.php|wp-links-opml.php|wp-locations.php|sitemap(_index)?.xml|[a-z0-9_-]+-sitemap([0-9]+)?.xml)") {
+        set $no_cache 1;
+}   
+ 
+# # # Don't use the cache for logged in users or recent commenters
+if ($http_cookie ~* "comment_author|wordpress_[a-f0-9]+|wp-postpass|wordpress_no_cache|wordpress_logged_in") {
+        set $no_cache 1;
+} 

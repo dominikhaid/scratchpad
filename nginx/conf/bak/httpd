@@ -1,0 +1,141 @@
+#ATTENTION!
+#
+#DO NOT MODIFY THIS FILE BECAUSE IT WAS GENERATED AUTOMATICALLY,
+#SO ALL YOUR CHANGES WILL BE LOST THE NEXT TIME THE FILE IS GENERATED.
+#IF YOU REQUIRE TO APPLY CUSTOM MODIFICATIONS, PERFORM THEM IN THE FOLLOWING FILES:
+#/var/www/vhosts/system/dominikhaid.de/conf/vhost.conf
+#/var/www/vhosts/system/dominikhaid.de/conf/vhost_ssl.conf
+<IfModule mod_ssl.c>
+
+	<VirtualHost 178.254.31.13:7081 >
+		ServerName "dominikhaid.de:443"
+		ServerAlias "www.dominikhaid.de"
+		ServerAlias "ipv4.dominikhaid.de"
+		UseCanonicalName Off
+
+		DocumentRoot "/var/www/vhosts/dominikhaid.de/httpdocs"
+		CustomLog /var/www/vhosts/system/dominikhaid.de/logs/access_ssl_log plesklog
+		ErrorLog "/var/www/vhosts/system/dominikhaid.de/logs/error_log"
+
+		<IfModule mod_suexec.c>
+			SuexecUserGroup "dominikhaid.de" "psacln"
+		</IfModule>
+
+		<IfModule mod_userdir.c>
+
+			UserDir "/var/www/vhosts/dominikhaid.de/web_users/*"
+		</IfModule>
+
+		<IfModule mod_sysenv.c>
+			SetSysEnv PP_VHOST_ID "21b61561-76a3-4ea8-98ae-6485ca18c540"
+		</IfModule>
+
+		Alias "/plesk-stat" "/var/www/vhosts/system/dominikhaid.de/statistics"
+		<Location  /plesk-stat/>
+			Options +Indexes
+		</Location>
+		<Location  /plesk-stat/logs/>
+			Require valid-user
+		</Location>
+		Alias /webstat /var/www/vhosts/system/dominikhaid.de/statistics/webstat
+		Alias /webstat-ssl /var/www/vhosts/system/dominikhaid.de/statistics/webstat-ssl
+		Alias /ftpstat /var/www/vhosts/system/dominikhaid.de/statistics/ftpstat
+		Alias /anon_ftpstat /var/www/vhosts/system/dominikhaid.de/statistics/anon_ftpstat
+		Alias /awstats-icon /usr/share/awstats/icon
+
+		SSLEngine on
+		SSLVerifyClient none
+		SSLCertificateFile /opt/psa/var/certificates/scfmYR47B
+		SSLCACertificateFile /opt/psa/var/certificates/scfaYCu1a
+
+		<Directory /var/www/vhosts/dominikhaid.de/httpdocs>
+
+			<IfModule mod_fcgid.c>
+				<Files ~ (\.fcgi$)>
+					SetHandler fcgid-script
+					Options +ExecCGI
+				</Files>
+			</IfModule>
+			<IfModule mod_proxy_fcgi.c>
+				<Files ~ (\.php$)>
+					SetHandler proxy:unix:///var/www/vhosts/system/dominikhaid.de/php-fpm.sock|fcgi://127.0.0.1:9000
+				</Files>
+			</IfModule>
+
+			SSLRequireSSL
+
+			Options -Includes -ExecCGI
+
+		</Directory>
+
+		<Directory "/var/www/vhosts/system/dominikhaid.de/statistics">
+			AuthType Basic
+			AuthName "Domainstatistiken"
+			AuthUserFile "/var/www/vhosts/system/dominikhaid.de/pd/d..httpdocs@plesk-stat"
+			require valid-user
+		</Directory>
+
+		Alias /error_docs /var/www/vhosts/dominikhaid.de/error_docs
+		ErrorDocument 400 /error_docs/bad_request.html
+		ErrorDocument 401 /error_docs/unauthorized.html
+		ErrorDocument 403 /error_docs/forbidden.html
+		ErrorDocument 404 /error_docs/not_found.html
+		ErrorDocument 500 /error_docs/internal_server_error.html
+		ErrorDocument 405 /error_docs/method_not_allowed.html
+		ErrorDocument 406 /error_docs/not_acceptable.html
+		ErrorDocument 407 /error_docs/proxy_authentication_required.html
+		ErrorDocument 412 /error_docs/precondition_failed.html
+		ErrorDocument 414 /error_docs/request_uri_too_long.html
+		ErrorDocument 415 /error_docs/unsupported_media_type.html
+		ErrorDocument 501 /error_docs/not_implemented.html
+		ErrorDocument 502 /error_docs/bad_gateway.html
+		ErrorDocument 503 /error_docs/maintenance.html
+
+		<IfModule mod_rewrite.c>
+			RewriteEngine On
+			RewriteCond %{HTTP_HOST} ^dominikhaid\.de$ [NC]
+			RewriteRule ^(.*)$ https://www.dominikhaid.de$1 [L,R=301]
+		</IfModule>
+
+		<Directory /var/www/vhosts/dominikhaid.de>
+			AllowOverride AuthConfig FileInfo Indexes Limit Options=Indexes,SymLinksIfOwnerMatch,MultiViews,FollowSymLinks,ExecCGI,Includes,IncludesNOEXEC
+		</Directory>
+
+		#extension letsencrypt begin
+		Alias /.well-known/acme-challenge "/var/www/vhosts/default/htdocs/.well-known/acme-challenge"
+
+		<Location /.well-known/acme-challenge/>
+			# Require all granted
+			Order Deny,Allow
+			Allow from all
+			Satisfy any
+		</Location>
+
+		<LocationMatch "^/.well-known/acme-challenge/(.*/|)\.">
+			# Require all denied
+			Order Allow,Deny
+			Deny from all
+		</LocationMatch>
+		#extension letsencrypt end
+	</VirtualHost>
+
+</IfModule>
+
+<VirtualHost 178.254.31.13:7080 >
+	ServerName "dominikhaid.de:80"
+	ServerAlias "www.dominikhaid.de"
+	ServerAlias "ipv4.dominikhaid.de"
+	UseCanonicalName Off
+
+	<IfModule mod_rewrite.c>
+		RewriteEngine On
+		RewriteCond %{HTTP_HOST} ^dominikhaid\.de$ [NC]
+		RewriteRule ^(.*)$ https://www.dominikhaid.de$1 [L,R=301]
+	</IfModule>
+
+	<IfModule mod_rewrite.c>
+		RewriteEngine On
+		RewriteCond %{HTTPS} off
+		RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L,QSA]
+	</IfModule>
+</VirtualHost>
