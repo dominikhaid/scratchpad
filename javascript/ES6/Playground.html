@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<title>stylesheet</title>
+		<meta name="author" content="Dominik Haid" />
+		<meta name="viewport" content="width=device-width; initial-scale=1.0" />
+		<link rel="apple-touch-icon" href="images/ico.ico" />
+		<link rel="stylesheet" href="main.css" />
+		<link rel="icon" href="images/ico.ico" type="image/x-icon" />
+		<script type="text/javascript">
+			function onLoad() {
+				//ASYNC AWAIT
+				//PROMISE
+
+				console.log(this);
+				function fetchAddReuqest() {
+					//e.preventDefault();
+					const url = 'https://jsonplaceholder.typicode.com/posts';
+					fetch(url, {
+						method: 'POST',
+						headers: {
+							Accept: 'aplication/json, text/plain, */*',
+							'Content-type': 'aqplication/json'
+						},
+						body: JSON.stringify('data:data')
+					})
+						.then(res => res.json())
+						.then(data => {
+							console.log(data);
+							document.getElementById('body').innerHTML = data;
+						})
+						.catch(err => {
+							document.getElementById('body').innerHTML = err;
+						});
+				}
+				fetchAddReuqest();
+			}
+		</script>
+	</head>
+
+	<body id="body" onload="onLoad();">
+		<div><h1 id="h1" title="test1">Heading1</h1></div>
+		<div><h1 title="test2">Heading2</h1></div>
+	</body>
+</html>
