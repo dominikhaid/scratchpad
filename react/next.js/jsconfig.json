@@ -1,18 +1,34 @@
 {
   "compilerOptions": {
-    "baseUrl": ".",
+    "baseUrl": "./",
     "paths": {
-      "@/components/*": ["/src/components/*"],
-      "@/context/*": ["/src/context/*"],
-      "@/hooks/*": ["/src/hooks/*"],
-      "@/routers/*": ["/src/routers/*"],
-			"@/reducers/*": ["/src/reducers/*"],
-			"@/public/*": ["/public/*"],
-			"@/src/*": ["/src/*"],
-      "@/includes/*": ["/src/includes/*"]
+      "components/*": ["/src/components/*"],
+      "lib/*": ["/src/lib/*"],
+      "src/*": ["/src/*"],
+      "public/*": ["/public/*"],
+      "data/*": ["/src/data/*"],
+      "context/*": ["/src/context/*"],
+      "hooks/*": ["/src/hooks/*"],
+      "routers/*": ["/src/routers/*"],
+      "reducers/*": ["/src/reducers/*"],
+      "includes/*": ["/src/includes/*"]
     },
     "module": "commonjs",
     "target": "es6"
   },
-  "exclude": ["node_modules", "build", "coverage", "dist", "lib"]
+  "exclude": [
+    "node_modules",
+    "__screenshots__",
+    "log",
+    "uploads",
+    ".next",
+    ".git",
+    "out",
+    "static",
+    "stroybook-static",
+    "build",
+    "coverage",
+    "dist",
+    "lib"
+  ]
 }

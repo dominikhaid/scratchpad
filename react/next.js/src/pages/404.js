@@ -1,72 +1,40 @@
-import React from "react";
-import { Header, Container, Icon, Divider, Segment } from "semantic-ui-react";
+import React from 'react';
+import ResultBox from 'components/Elements/Results/DefaultResult';
+import PropTypes from 'prop-types';
+import DefaultButton from 'components/Elements/Buttons/DefaultButton';
+import WarningIcon from 'public/icons/phosphor-icons/assets/duotone/info-duotone.svg';
+import Link from 'next/link';
+import Head from 'next/head';
 
-export default function NotFoundPage(props) {
+/**
+ * @desc 404 Page
+ * @returns react component
+ */
+export default function NotFoundPage() {
+  NotFoundPage.propTypes = {
+    user: PropTypes.object,
+    updateState: PropTypes.func,
+  };
+
   return (
     <>
-      <Container
-        className="margin flex-con flex-center fluid"
-        style={{ minHeight: "50%" }}
-      >
-        <Container
-          className="flex-con flex-center"
-          style={{ minHeight: "50%" }}
+      <Head>
+        <title>Error - 404</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta property="og:title" content="Error - 404" key="title" />
+      </Head>
+      <section className="404 px-lg xl:px-none">
+        <ResultBox
+          className="text-secondary shadow-lg bg-white"
+          icon={<WarningIcon className="animate-popIn text-secondary" />}
+          title="Error - 404"
         >
-          <Segment
-            className="flex-con flex-center"
-            style={{ maxWidth: "750px" }}
-          >
-            <div className="flex-item-4">
-              <Icon.Group
-                size="massive"
-                style={{
-                  borderRadius: "999px",
-                  backgroundColor: "#d26f1c",
-                  width: "165px",
-                  height: "165px",
-                  paddingTop: "1rem",
-                }}
-              >
-                <Icon name="user secret" style={{ paddingLeft: "26px" }} />
-                <Icon
-                  corner="bottom right"
-                  name="times circle"
-                  style={{
-                    borderRadius: "999px",
-                    padding: "2rem",
-                    paddingTop: "0.2rem",
-                    height: "65px",
-                    width: "65px",
-                    paddingLeft: "0.2rem",
-                    backgroundColor: "white",
-                    color: "#d26f1c",
-                  }}
-                />
-              </Icon.Group>
-              <Header
-                id="blogDes"
-                as="h1"
-                className={"text-center gluid margin-top"}
-              >
-                404
-              </Header>
-            </div>
-            <p
-              className="flex-item-4 margin-top border padding text-center margin-bottom"
-              style={{ maxWidth: "450px" }}
-            >
-              Die gesuchte Seite wurde nicht gefunden, oder ist nicht mehr
-              verfügbar.
-              <Divider className="flex-item-4" />
-              <p className="flex-item-4">
-                <strong>
-                  <a href="print-und-screendesign">Startseite</a>
-                </strong>
-              </p>
-            </p>
-          </Segment>
-        </Container>
-      </Container>
+          <h2>We are sorry page your looking for does not exist</h2>
+          <Link href="/">
+            <DefaultButton aria={`back to home`} type="primary" title="Home" />
+          </Link>
+        </ResultBox>
+      </section>
     </>
   );
 }

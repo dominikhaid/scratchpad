@@ -1,48 +1,63 @@
-const moment = require("moment");
+const moment = require('moment');
 
-const checkReqErrors = (e, res, callback) => {
-	if (e.code || e.error) return res.status(200).jsonp({ error: e });
+/**
+ * @desc resolve server resquest
+ * @param {Object} obj {code:"",msg:"" || error:""}
+ * @param {Object} res express response object
+ * @param {Function} callback optional callback
+ * @returns response
+ */
 
-	//Do not exit Request
-	if (callback === "break") return;
-	//Succes Callback
-	return res.status(200).jsonp({
-		success: e,
-		callback: !callback ? false : callback(e),
-	});
+const checkReqErrors = (obj, res, callback) => {
+  if (obj.code || obj.error) return res.status(200).jsonp({error: obj});
+
+  if (callback === 'break') return;
+
+  return res.status(200).jsonp({
+    success: obj,
+    callback: !callback ? false : callback(obj),
+  });
 };
 
 module.exports.checkReqErrors = checkReqErrors;
 
-const signInJWT = (e, jsonWebToken, myJWTSecretKey) => {
-	const userJWT = {
-		email: e.email,
-		id: e.uid,
-		name: e.displayName,
-		role:
-			e.customClaims && e.customClaims.admin
-				? "adminApiRequest"
-				: "userApiRequest",
-		issuer: "https://dev.dominikhaid.de",
-		exp: moment().add(1, "hours").unix(),
-	};
-	// sign with default (HMAC SHA256)
-	const token = jsonWebToken.sign(userJWT, myJWTSecretKey);
-	return { token: token };
+/**
+ * @desc create jwt token
+ * @param {Object} user
+ * @param {Function} jsonWebToken
+ * @param {String} myJWTSecretKey
+ * @returns jwt token
+ */
+const signInJWT = (user, jsonWebToken, myJWTSecretKey) => {
+  const userJWT = {
+    email: user.email,
+    id: user.uid,
+    name: user.displayName,
+    role:
+      user.customClaims && user.customClaims.admin
+        ? 'adminApiRequest'
+        : 'userApiRequest',
+    issuer: 'https://dev.dominikhaid.de',
+    exp: moment().add(1, 'hours').unix(),
+  };
+  // sign with default (HMAC SHA256)
+  const token = jsonWebToken.sign(userJWT, myJWTSecretKey);
+  return {token: token};
 };
 
 module.exports.signInJWT = signInJWT;
 
+/**
+ * @desc verify user role
+ * @param {String} role
+ * @param {String} level
+ * @param {Object} res
+ * @returns response
+ */
 const checkRole = (role, level, res) => {
-	//console.debug(role)
-	if (!role.body || !role.body.role || !level)
-		return checkReqErrors(
-			{ error: "Your are not authenticated" },
-			res,
-			"break"
-		);
-	if (role.body.role !== level) return false;
-	return true;
+  if (!role.body || !role.body.role || !level)
+    return checkReqErrors({error: 'Your are not authenticated'}, res, 'break');
+  return true;
 };
 
 module.exports.checkRole = checkRole;

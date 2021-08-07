@@ -1,5 +1,3 @@
-// npm run plg p=https://github.com/dominikhaid/list-ui-kits.git
-
 const util = require('util');
 const fs = require('fs');
 const exec = util.promisify(require('child_process').exec);
@@ -7,6 +5,7 @@ const writeFile = util.promisify(fs.writeFile);
 const readFile = util.promisify(fs.readFile);
 const appendFile = util.promisify(fs.appendFile);
 const plugFld = 'tmpPlug';
+
 let plugNm = process.argv.filter(element => {
   return element.indexOf('p=') > -1;
 });
@@ -16,12 +15,6 @@ plugNm = plugNm[0].replace('p=', '');
 
 let plugInf,
   plugFiles = [];
-
-// function handelErr(out, err) {
-//   if (out) console.log('stdout:', out);
-//   // if (err) throw err;
-//   // console.log(err);
-// }
 
 async function gitClone() {
   console.info(`\nClone %s from GitHub\n`, plugNm);
@@ -41,11 +34,13 @@ async function instDep() {
   if (plugInf.dependencies) {
     let depInst = Object.keys(plugInf.dependencies);
     console.info(`\nInstall Dependencies %O\n`, depInst);
-    await exec(`npm i ${depInst.join(' ')}`);
+    await exec(`npm remove ${depInst.join(' ')}`);
+    await exec(`npm i ${depInst.join(' ')} -P`);
   }
   if (plugInf.devDependencies) {
     let depDev = Object.keys(plugInf.devDependencies);
     console.info(`\nInstall Dependencies %O\n`, depDev);
+    await exec(`npm remove ${depDev.join(' ')}`);
     await exec(`npm i ${depDev.join(' ')} -D`);
   }
 
@@ -141,7 +136,9 @@ async function upgradeFiles() {
     let replace;
     let newReg;
     for (const file of addIns) {
-      file.selector
+      /plugins:/.test(file.selector)
+        ? (replace = `(.*${file.selector})`)
+        : file.selector
         ? (replace = `(func.*${file.selector}.*{)`)
         : (replace = `(^.*|^\n)`);
       file.selector
@@ -149,6 +146,7 @@ async function upgradeFiles() {
         : (newReg = new RegExp(replace, 'u'));
       let tmpFile = await readFile(`./${file.file}`, 'utf8');
       tmpFile = tmpFile.replace(newReg, `$1\n${file.replacemant}`);
+
       oldFiles.push({file: file.file, content: tmpFile});
     }
 

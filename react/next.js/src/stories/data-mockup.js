@@ -1,0 +1,65 @@
+export const appState = {
+  user: {
+    customerNumber: '0C83D106-0218-F746-4B0F-66E6A98D631D',
+    email: 'augue.eu.tempor@nullaDonec.ca',
+    password: 'RadnOmPass23!',
+    userName: 'Harlan Clark',
+    contactLastName: 'Gibbs',
+    contactFirstName: 'Dominique',
+    phone: '458-2682',
+    addressLine1: '5781 Suscipit, Rd.',
+    city: 'Ibadan',
+    state: 'Oyo',
+    customerPhoto: 'images/dominikhaid.jpg',
+    postalCode: '110793',
+    country: 'Norfolk Island',
+    salesRepEmployeeNumber: 574,
+    creditLimit: 21811,
+  },
+  card: {
+    products: [
+      {
+        productCode: '96820-5102',
+        productName: 'Product',
+        colors: 'red,turquoise',
+        productPhotos: 'dominikhaid.jpg,dominikhaid.jpg',
+        productLine: 'Product line',
+        productVendor: 'Vendor',
+        productDescription:
+          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore illum nostrum voluptatem commodi voluptate? Consequatur eos voluptatem dignissimos eum rerum.',
+        productContent:
+          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore illum nostrum voluptatem commodi voluptate? Consequatur eos voluptatem dignissimos eum rerum.',
+        quantityInStock: 1000,
+        buyPrice: 5109.0,
+        MSRP: 5999.0,
+        createdAt: '',
+        updatedAt: '',
+        color: 'red',
+        quantity: '1',
+      },
+    ],
+  },
+  products: [
+    {
+      productCode: '96820-5102',
+      productName: 'Product',
+      colors: 'red,turquoise',
+      productPhotos: 'dominikhaid.jpg,dominikhaid.jpg',
+      productLine: 'Product line',
+      productVendor: 'Vendor',
+      productDescription:
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore illum nostrum voluptatem commodi voluptate? Consequatur eos voluptatem dignissimos eum rerum.',
+      productContent:
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore illum nostrum voluptatem commodi voluptate? Consequatur eos voluptatem dignissimos eum rerum.',
+      quantityInStock: 1000,
+      buyPrice: 5109.0,
+      MSRP: 5999.0,
+      createdAt: '',
+      updatedAt: '',
+      color: 'red',
+      quantity: '1',
+    },
+  ],
+  updateState: () => card,
+  updateCard: () => card,
+};

@@ -1,8 +1,0 @@
-@dividerOpacity: 1;
-@dividerSpacing: 0.6rem;
-@dividerSize: @big;
-@dividerColor: @linkColor;
-
-
-@huge: 1.5384em;
-

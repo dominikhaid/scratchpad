@@ -1,7 +1,0 @@
-#__next .checkbox label:hover, #__next .checkbox + label:hover {
-    color: @primaryColor;
-}
-
-.ui.checkbox input:focus ~ label {
-    color: lighten(@primaryColor,20);
-}

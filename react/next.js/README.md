@@ -1,12 +1,14 @@
-# Modular Express.js Server
+# Modular Next.js dev server
 
 ---
 
 </br>
 
-- [Modular Express.js Server](#modular-expressjs-server)
+- [Modular Next.js dev server](#modular-nextjs-dev-server)
 	- [Description](#description)
 	- [Setup](#setup)
+		- [Standealone](#standealone)
+		- [With Express](#with-express)
 	- [Usage](#usage)
 	- [Core Modules](#core-modules)
 		- [Express.js](#expressjs)
@@ -44,19 +46,27 @@
 ## Description
 
 ---
-
-Modular Express.js Server with many ready to use and preconfigured plugins.
-Small and secure by default but extendable to what ever you whant. Focused on
-react development and Integration of different databases. </br></br>
+Extended Next.js configuration with storybook and tailwindcss. This Next.js server can be used as a standalone node.js server or with express.  
+ </br></br>
 
 ## Setup
 
 ---
 
+### Standealone 
+
+1.  git clone https://github.com/dominikhaid/node-module-next.git my-app
+2.  cd my-app
+3.  npm i
+4.  npm run next:dev </br></br>
+
+### With Express
+
 1.  git clone https://github.com/dominikhaid/node-base-server.git my-app
 2.  cd my-app
 3.  npm i
-4.  npm run dev </br></br>
+4.  npm run plugin p=https://github.com/dominikhaid/node-module-next.git
+5.  npm run dev </br></br>
 
 ## Usage
 

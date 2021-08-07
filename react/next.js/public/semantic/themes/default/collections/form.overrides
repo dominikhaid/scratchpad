@@ -1,5 +1,0 @@
-
-form.ui.form {
-  display: flex;
-  flex-wrap: wrap;
-}

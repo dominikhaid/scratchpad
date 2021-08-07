@@ -1,7 +1,0 @@
-#__next ui.cards > .card > .content > .header:not(.ui), #__next .ui.card > .content > .header:not(.ui) {
-    font-weight: bold;
-    font-size: 1.28571429em;
-    margin-top: inherit;
-    line-height: 1.28571429em;
-
-}

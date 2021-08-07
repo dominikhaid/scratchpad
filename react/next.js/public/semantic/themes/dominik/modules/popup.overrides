@@ -1,5 +1,0 @@
-
-html body .ui.popup,
-html body .ui.popup:before {
-    background: @lightGray !important;
-}

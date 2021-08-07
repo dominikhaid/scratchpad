@@ -1,2 +1,0 @@
-@shapeBorderColor: rgba(255,255,255,0.4) rgba(255,255,255,0.4) rgba(255,255,255,0.2) rgba(255,255,255,0.2);
-@invertedShapeBorderColor: @lightPrimaryColor @lightPrimaryColor @lightSecondaryColor @lightSecondaryColor;

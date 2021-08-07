@@ -1,7 +1,0 @@
-node_modules
-npm-debug.log
-/.git
-/docker-backups
-/node_modules
-/docker
-yarn.lock
