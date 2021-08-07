@@ -1,0 +1,274 @@
+#ATTENTION!
+#
+#DO NOT MODIFY THIS FILE BECAUSE IT WAS GENERATED AUTOMATICALLY,
+#SO ALL YOUR CHANGES WILL BE LOST THE NEXT TIME THE FILE IS GENERATED.
+
+ServerName "v98240.1blu.de"
+
+DocumentRoot "/var/www/vhosts/default/htdocs"
+
+<IfModule mod_logio.c>
+	LogFormat "%a %l %u %t \"%r\" %>s %O \"%{Referer}i\" \"%{User-Agent}i\"" plesklog
+</IfModule>
+<IfModule !mod_logio.c>
+	LogFormat "%a %l %u %t \"%r\" %>s %b \"%{Referer}i\" \"%{User-Agent}i\"" plesklog
+</IfModule>
+
+TraceEnable off
+
+ServerTokens ProductOnly
+
+<Directory "/var/www/vhosts">
+	AllowOverride "All"
+	Options SymLinksIfOwnerMatch
+	Require all granted
+	Order allow,deny
+	Allow from all
+
+	<IfModule mod_php4.c>
+		php_admin_flag engine off
+	</IfModule>
+
+	<IfModule mod_php5.c>
+		php_admin_flag engine off
+	</IfModule>
+
+	<IfModule mod_php7.c>
+		php_admin_flag engine off
+	</IfModule>
+
+</Directory>
+
+<Directory "/usr/lib/mailman">
+	AllowOverride All
+	Options SymLinksIfOwnerMatch
+	Require all granted
+	<IfModule mod_php4.c>
+		php_admin_flag engine off
+	</IfModule>
+	<IfModule mod_php5.c>
+		php_admin_flag engine off
+	</IfModule>
+</Directory>
+
+<IfModule mod_security2.c>
+	SecRuleEngine On
+	SecRequestBodyAccess Off
+	SecResponseBodyAccess Off
+	SecAuditEngine RelevantOnly
+	SecAuditLog "/var/log/modsec_audit.log"
+	SecAuditLogType serial
+</IfModule>
+
+IncludeOptional "/etc/apache2/plesk.conf.d/ip_default/*.conf"
+
+<VirtualHost 178.254.31.13:7080 172.29.0.1:7080 172.19.0.1:7080 127.0.0.1:7080>
+	ServerName "default"
+	UseCanonicalName Off
+	DocumentRoot "/var/www/vhosts/default/htdocs"
+	ScriptAlias /cgi-bin/ "/var/www/vhosts/default/cgi-bin"
+
+	<IfModule mod_ssl.c>
+		SSLEngine off
+	</IfModule>
+
+	<Directory "/var/www/vhosts/default/cgi-bin">
+		AllowOverride None
+		Options None
+		Order allow,deny
+		Allow from all
+	</Directory>
+
+	<Directory /var/www/vhosts/default/htdocs>
+
+		<IfModule mod_php4.c>
+			php_admin_flag engine on
+		</IfModule>
+
+		<IfModule mod_php5.c>
+			php_admin_flag engine on
+		</IfModule>
+
+		<IfModule mod_php7.c>
+			php_admin_flag engine on
+		</IfModule>
+
+	</Directory>
+
+</VirtualHost>
+
+<IfModule mod_ssl.c>
+
+	<VirtualHost 178.254.31.13:7081 127.0.0.1:7081>
+		ServerName "default-178_254_31_13"
+		UseCanonicalName Off
+		DocumentRoot "/var/www/vhosts/default/htdocs"
+		ScriptAlias /cgi-bin/ "/var/www/vhosts/default/cgi-bin"
+
+		SSLEngine on
+		SSLVerifyClient none
+		SSLCertificateFile "/opt/psa/var/certificates/scfuo3L10"
+
+		SSLCACertificateFile "/opt/psa/var/certificates/scf3A9wic"
+
+		<Directory "/var/www/vhosts/default/cgi-bin">
+			AllowOverride None
+			Options None
+			Order allow,deny
+			Allow from all
+		</Directory>
+
+		<Directory /var/www/vhosts/default/htdocs>
+
+			<IfModule mod_php4.c>
+				php_admin_flag engine on
+			</IfModule>
+
+			<IfModule mod_php5.c>
+				php_admin_flag engine on
+			</IfModule>
+
+			<IfModule mod_php7.c>
+				php_admin_flag engine on
+			</IfModule>
+
+		</Directory>
+
+	</VirtualHost>
+	<VirtualHost 172.29.0.1:7081 127.0.0.1:7081>
+		ServerName "default-172_29_0_1"
+		UseCanonicalName Off
+		DocumentRoot "/var/www/vhosts/default/htdocs"
+		ScriptAlias /cgi-bin/ "/var/www/vhosts/default/cgi-bin"
+
+		SSLEngine on
+		SSLVerifyClient none
+		SSLCertificateFile "/opt/psa/var/certificates/scfuo3L10"
+
+		SSLCACertificateFile "/opt/psa/var/certificates/scf3A9wic"
+
+		<Directory "/var/www/vhosts/default/cgi-bin">
+			AllowOverride None
+			Options None
+			Order allow,deny
+			Allow from all
+		</Directory>
+
+		<Directory /var/www/vhosts/default/htdocs>
+
+			<IfModule mod_php4.c>
+				php_admin_flag engine on
+			</IfModule>
+
+			<IfModule mod_php5.c>
+				php_admin_flag engine on
+			</IfModule>
+
+			<IfModule mod_php7.c>
+				php_admin_flag engine on
+			</IfModule>
+
+		</Directory>
+
+	</VirtualHost>
+	<VirtualHost 172.19.0.1:7081 127.0.0.1:7081>
+		ServerName "default-172_19_0_1"
+		UseCanonicalName Off
+		DocumentRoot "/var/www/vhosts/default/htdocs"
+		ScriptAlias /cgi-bin/ "/var/www/vhosts/default/cgi-bin"
+
+		SSLEngine on
+		SSLVerifyClient none
+		SSLCertificateFile "/opt/psa/var/certificates/scfuo3L10"
+
+		SSLCACertificateFile "/opt/psa/var/certificates/scf3A9wic"
+
+		<Directory "/var/www/vhosts/default/cgi-bin">
+			AllowOverride None
+			Options None
+			Order allow,deny
+			Allow from all
+		</Directory>
+
+		<Directory /var/www/vhosts/default/htdocs>
+
+			<IfModule mod_php4.c>
+				php_admin_flag engine on
+			</IfModule>
+
+			<IfModule mod_php5.c>
+				php_admin_flag engine on
+			</IfModule>
+
+			<IfModule mod_php7.c>
+				php_admin_flag engine on
+			</IfModule>
+
+		</Directory>
+
+	</VirtualHost>
+
+</IfModule>
+
+<VirtualHost 178.254.31.13:7080 172.29.0.1:7080 172.19.0.1:7080 127.0.0.1:7080>
+	DocumentRoot "/var/www/vhosts/default/htdocs"
+	ServerName lists
+	ServerAlias lists.*
+	UseCanonicalName Off
+
+	ScriptAlias "/mailman/" "/usr/lib/cgi-bin/mailman/"
+	ScriptAlias "/cgi-bin/mailman/" "/usr/lib/cgi-bin/mailman/"
+
+	Alias "/icons/" "/var/lib/mailman/icons/"
+	Alias "/pipermail/" "/var/lib/mailman/archives/public/"
+	Alias "/images/" "/usr/share/images/"
+
+	<IfModule mod_ssl.c>
+		SSLEngine off
+	</IfModule>
+
+	<Directory /var/lib/mailman/archives/>
+		Options FollowSymLinks
+		Require all granted
+	</Directory>
+
+</VirtualHost>
+
+<IfModule mod_ssl.c>
+	<VirtualHost 178.254.31.13:7081 172.29.0.1:7081 172.19.0.1:7081 127.0.0.1:7081>
+		DocumentRoot "/var/www/vhosts/default/htdocs"
+		ServerName lists
+		ServerAlias lists.*
+		UseCanonicalName Off
+
+		ScriptAlias "/mailman/" "/usr/lib/cgi-bin/mailman/"
+		ScriptAlias "/cgi-bin/mailman/" "/usr/lib/cgi-bin/mailman/"
+
+		Alias "/icons/" "/var/lib/mailman/icons/"
+		Alias "/pipermail/" "/var/lib/mailman/archives/public/"
+		Alias "/images/" "/usr/share/images/"
+
+		SSLEngine on
+		SSLVerifyClient none
+		SSLCertificateFile "/opt/psa/var/certificates/scfuo3L10"
+
+		<Directory /var/lib/mailman/archives/>
+			Options FollowSymLinks
+			Require all granted
+		</Directory>
+
+	</VirtualHost>
+</IfModule>
+
+<IfModule mod_rpaf.c>
+	RPAFproxy_ips 178.254.31.13 172.29.0.1 172.19.0.1
+
+</IfModule>
+<IfModule mod_rpaf-2.0.c>
+	RPAFproxy_ips 178.254.31.13 172.29.0.1 172.19.0.1
+
+</IfModule>
+<IfModule mod_remoteip.c>
+	RemoteIPInternalProxy 178.254.31.13 172.29.0.1 172.19.0.1
+	RemoteIPHeader X-Forwarded-For
+</IfModule>
