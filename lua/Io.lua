@@ -15,4 +15,4 @@ io.tmpfile() --removed when programm ends
 io.type(file) -- file
 io.write("string", file)
 file:write("string")
-file:seek("set", 50) --set cur base ,offset
+file:seek("set", 50) --set cur base ,ffset
