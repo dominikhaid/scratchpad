@@ -1,6 +1,5 @@
-# ScratchPad for all kinds of stuff.
+# ScratchPad
 
 ## Description
 
-Some old stuff merged together. This will be our place to scratch things.
-Recommended tools Nvim with our setup and [Codi](https://github.com/metakirby5/codi.vim).
+Different samples files for various types of programming languages, to play arounnd with.
