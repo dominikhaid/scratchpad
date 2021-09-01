@@ -5,6 +5,19 @@ echo "HERE_9044REMOVE.jpg" | sed "s/.[a-z|A-Z|0-9|\-]*\.\w*$//g"
 echo "REPLACE HERE" | sd 'HERE' ''
 sed -En "s|$PWD/(.*)\.sh$|\1|p"
 
+echo "convert this to upper" | tr "[a-z]" "[A-Z]"
+
+__init=$"
+
+
+
+Starting batch converting images
+____________________________________________________________________
+in: $folder recursively
+types: $type
+
+"
+
 # TRAP IGNORE SIGN / CONDITION
 TR="HALLO
 _
