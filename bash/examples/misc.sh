@@ -3,6 +3,7 @@
 echo "THIS HERE SHOULD BE REPLACED" | sed "s/HERE/\//g"
 echo "HERE_9044REMOVE.jpg" | sed "s/.[a-z|A-Z|0-9|\-]*\.\w*$//g"
 echo "REPLACE HERE" | sd 'HERE' ''
+sed -En "s|$PWD/(.*)\.sh$|\1|p"
 
 # TRAP IGNORE SIGN / CONDITION
 TR="HALLO
