@@ -21,3 +21,12 @@ returnArg() {
 res=$(returnArg)
 
 printf "${res[@]}"
+
+funcAsString() {
+	echo "
+    runs"
+}
+
+STRING="funcAsString"
+
+eval $STRING
