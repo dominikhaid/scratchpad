@@ -13,7 +13,7 @@ done
 
 # NOTE READ FOLDER MATCHING REGEX
 while IFS= read -d $'\0' -r file; do
-	FINDRESULT+=($0)
+	FINDRESULT+=($file)
 done < <(find $FOLDER -regex ".*loops.*\.\(sh\)" -print0)
 
 # COPY TO REMOTE
