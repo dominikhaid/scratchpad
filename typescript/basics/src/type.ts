@@ -1,12 +1,13 @@
-export const msg = 'Hello World!';
+export {};
+const msg = 'Hello World!';
 console.log(msg);
 
 const num = 1985;
 console.log(num);
 
 const bool = true;
-console.log(bool);
 
+console.log(bool);
 const any: any = 'Null' + 123;
 console.log(any);
 

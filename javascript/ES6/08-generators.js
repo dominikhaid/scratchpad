@@ -10,9 +10,9 @@ Twitter: twitter.com/pentacodevids
 - Allows 2-way message passing, either from inside out (sending message out from each yield) or outside in 
  */
 
-function *myGenerator() {
-	var name = yield 'I need a name';
-	console.log(name);
+function* myGenerator() {
+  var name = yield 'I need a name';
+  console.log(name);
 }
 
 var x = myGenerator();

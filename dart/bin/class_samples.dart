@@ -14,6 +14,7 @@ void main(List<String> arguments) {
   print(loc2 == loc4); // false
   print(loc1 == loc4); // true – same class & values
 
+  //generate without initialize the class
   MyClass generated = MyClass.generate(num: 132);
   print(generated);
   print(generated.sum(123));
@@ -23,6 +24,7 @@ void main(List<String> arguments) {
   MyClass.myStaticNum = 2;
   print(MyClass.pi);
 
+  //new class initialize
   MyClass myClass = MyClass();
   myClass.num = 2;
 
