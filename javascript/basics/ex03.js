@@ -1,5 +1,5 @@
 let s1 = 'my name is vinod';
-let s2 = "i live in bangalore";
+let s2 = 'i live in bangalore';
 let s3 = "this is a 'reactjs' training";
 let s4 = 'the training is avaliable on "Udemy" platform';
 
@@ -23,5 +23,5 @@ let s7 = `Email address of ${name} is ${email}`;
 console.log(s7);
 
 let age = 12;
-let s8 = `${name} is ${age<18? 'a minor': 'an adult'}`;
+let s8 = `${name} is ${age < 18 ? 'a minor' : 'an adult'}`;
 console.log(s8);
