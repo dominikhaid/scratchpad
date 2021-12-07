@@ -1,0 +1,192 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/dominik/Dokumente/scratchpad/flutter/platform_view/android/app/src/main/AndroidManifest.xml:5:1-39:12
+INJECTED from /home/dominik/Dokumente/scratchpad/flutter/platform_view/android/app/src/main/AndroidManifest.xml:5:1-39:12
+INJECTED from /home/dominik/Dokumente/scratchpad/flutter/platform_view/android/app/src/main/AndroidManifest.xml:5:1-39:12
+INJECTED from /home/dominik/Dokumente/scratchpad/flutter/platform_view/android/app/src/main/AndroidManifest.xml:5:1-39:12
+MERGED from [com.google.android.material:material:1.0.0] /home/dominik/.gradle/caches/transforms-2/files-2.1/36e952df3788000b19106c83d48b22a9/material-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat:1.1.0] /home/dominik/.gradle/caches/transforms-2/files-2.1/68d6ef75cadff74f727d919e8ab0afd6/appcompat-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] /home/dominik/.gradle/caches/transforms-2/files-2.1/159101ef13ea3d80c88207a75715e3c9/recyclerview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/dominik/.gradle/caches/transforms-2/files-2.1/6f9c9bbbb803979baf0940b966632b82/legacy-support-core-ui-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/dominik/.gradle/caches/transforms-2/files-2.1/cdf198080ced4a619043f1d14a3b28ec/swiperefreshlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/dominik/.gradle/caches/transforms-2/files-2.1/850b34de8ac0d2a2111f1f02470010cd/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.fragment:fragment:1.1.0] /home/dominik/.gradle/caches/transforms-2/files-2.1/b6e077ca9eca8c920ed0c81c3c0358a4/fragment-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/dominik/.gradle/caches/transforms-2/files-2.1/35201b4d2a17288e9191b1ce23208f51/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /home/dominik/.gradle/caches/transforms-2/files-2.1/4add694d4a3f80b91c21d8d5a882e68c/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/dominik/.gradle/caches/transforms-2/files-2.1/961a07aacf5c728823817af6ceb70583/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /home/dominik/.gradle/caches/transforms-2/files-2.1/d2d440c09bd73772c1af1188d65e2f91/jetified-appcompat-resources-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/dominik/.gradle/caches/transforms-2/files-2.1/51a08c0f641c9a6cf73ac3bfd51034a4/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.transition:transition:1.0.0] /home/dominik/.gradle/caches/transforms-2/files-2.1/446a9dbb2253f0366a8046732b3def8b/transition-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/dominik/.gradle/caches/transforms-2/files-2.1/1a220283481d3e6810d346db33aa0588/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.0.0] /home/dominik/.gradle/caches/transforms-2/files-2.1/c408e7ca4949006c5c53724c04b79783/jetified-activity-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/dominik/.gradle/caches/transforms-2/files-2.1/74e6635de1026d435911fbaeb0e12ecc/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/dominik/.gradle/caches/transforms-2/files-2.1/05aec43040e90ec412f2445ae187ea98/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /home/dominik/.gradle/caches/transforms-2/files-2.1/9bc284423766443dd3b304a4a500831c/coordinatorlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/dominik/.gradle/caches/transforms-2/files-2.1/0246a40347df373f4157bd216f1097fb/slidingpanelayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] /home/dominik/.gradle/caches/transforms-2/files-2.1/ccfbb6e59961272022125be333767c64/customview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/dominik/.gradle/caches/transforms-2/files-2.1/d89be9c73021060c43e75fa15cfb6cce/asynclayoutinflater-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.1.0] /home/dominik/.gradle/caches/transforms-2/files-2.1/8fe9eecfca6be0d6d0f77fd2524e7f24/core-1.1.0/AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/dominik/.gradle/caches/transforms-2/files-2.1/62443027c3d24c86f1072686fcf926a8/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/dominik/.gradle/caches/transforms-2/files-2.1/eeaad6a34e0692d1e5d984272a9c12d0/core-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /home/dominik/.gradle/caches/transforms-2/files-2.1/1d6861040b700c3f48a74adbf582142a/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/dominik/.gradle/caches/transforms-2/files-2.1/0a04303a14f61df7c8eaa1a112832de6/versionedparcelable-1.1.0/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /home/dominik/.gradle/caches/transforms-2/files-2.1/47065df8937cc7ff6ea500ba1405b62c/lifecycle-runtime-2.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] /home/dominik/.gradle/caches/transforms-2/files-2.1/f2d0b151eeb12f6b5b516632b899d02e/jetified-savedstate-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/dominik/.gradle/caches/transforms-2/files-2.1/08b06e554cba6a712a0218434154ff36/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cardview:cardview:1.0.0] /home/dominik/.gradle/caches/transforms-2/files-2.1/30b766b1a06f89d5c189b6b921a39dee/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/dominik/.gradle/caches/transforms-2/files-2.1/f0fcd39495935c1179eb497d905c06f8/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /home/dominik/.gradle/caches/transforms-2/files-2.1/ad2c8a7046f9503605cf7ba1bf830969/print-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/dominik/.gradle/caches/transforms-2/files-2.1/9623d528bdb2b6f6118e818607e6b173/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
+INJECTED from /home/dominik/Dokumente/scratchpad/flutter/platform_view/android/app/src/main/AndroidManifest.xml:5:1-39:12
+INJECTED from /home/dominik/Dokumente/scratchpad/flutter/platform_view/android/app/src/main/AndroidManifest.xml:5:1-39:12
+INJECTED from /home/dominik/Dokumente/scratchpad/flutter/platform_view/android/app/src/main/AndroidManifest.xml:5:1-39:12
+	package
+		ADDED from /home/dominik/Dokumente/scratchpad/flutter/platform_view/android/app/src/main/AndroidManifest.xml:6:5-48
+		INJECTED from /home/dominik/Dokumente/scratchpad/flutter/platform_view/android/app/src/main/AndroidManifest.xml
+		INJECTED from /home/dominik/Dokumente/scratchpad/flutter/platform_view/android/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /home/dominik/Dokumente/scratchpad/flutter/platform_view/android/app/src/main/AndroidManifest.xml
+		ADDED from /home/dominik/Dokumente/scratchpad/flutter/platform_view/android/app/src/main/AndroidManifest.xml:5:1-39:12
+		INJECTED from /home/dominik/Dokumente/scratchpad/flutter/platform_view/android/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /home/dominik/Dokumente/scratchpad/flutter/platform_view/android/app/src/main/AndroidManifest.xml
+		ADDED from /home/dominik/Dokumente/scratchpad/flutter/platform_view/android/app/src/main/AndroidManifest.xml:5:1-39:12
+		INJECTED from /home/dominik/Dokumente/scratchpad/flutter/platform_view/android/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/dominik/Dokumente/scratchpad/flutter/platform_view/android/app/src/main/AndroidManifest.xml:5:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /home/dominik/Dokumente/scratchpad/flutter/platform_view/android/app/src/main/AndroidManifest.xml:12:5-67
+	android:name
+		ADDED from /home/dominik/Dokumente/scratchpad/flutter/platform_view/android/app/src/main/AndroidManifest.xml:12:22-64
+application
+ADDED from /home/dominik/Dokumente/scratchpad/flutter/platform_view/android/app/src/main/AndroidManifest.xml:14:5-38:19
+MERGED from [com.google.android.material:material:1.0.0] /home/dominik/.gradle/caches/transforms-2/files-2.1/36e952df3788000b19106c83d48b22a9/material-1.0.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.0.0] /home/dominik/.gradle/caches/transforms-2/files-2.1/36e952df3788000b19106c83d48b22a9/material-1.0.0/AndroidManifest.xml:22:5-20
+MERGED from [androidx.core:core:1.1.0] /home/dominik/.gradle/caches/transforms-2/files-2.1/8fe9eecfca6be0d6d0f77fd2524e7f24/core-1.1.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.1.0] /home/dominik/.gradle/caches/transforms-2/files-2.1/8fe9eecfca6be0d6d0f77fd2524e7f24/core-1.1.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/dominik/.gradle/caches/transforms-2/files-2.1/0a04303a14f61df7c8eaa1a112832de6/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/dominik/.gradle/caches/transforms-2/files-2.1/0a04303a14f61df7c8eaa1a112832de6/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.1.0] /home/dominik/.gradle/caches/transforms-2/files-2.1/8fe9eecfca6be0d6d0f77fd2524e7f24/core-1.1.0/AndroidManifest.xml:24:18-86
+	android:label
+		ADDED from /home/dominik/Dokumente/scratchpad/flutter/platform_view/android/app/src/main/AndroidManifest.xml:16:9-38
+	android:icon
+		ADDED from /home/dominik/Dokumente/scratchpad/flutter/platform_view/android/app/src/main/AndroidManifest.xml:15:9-43
+activity#io.flutter.examples.platform_view.MainActivity
+ADDED from /home/dominik/Dokumente/scratchpad/flutter/platform_view/android/app/src/main/AndroidManifest.xml:17:9-27:20
+	android:hardwareAccelerated
+		ADDED from /home/dominik/Dokumente/scratchpad/flutter/platform_view/android/app/src/main/AndroidManifest.xml:21:13-47
+	android:windowSoftInputMode
+		ADDED from /home/dominik/Dokumente/scratchpad/flutter/platform_view/android/app/src/main/AndroidManifest.xml:22:13-55
+	android:configChanges
+		ADDED from /home/dominik/Dokumente/scratchpad/flutter/platform_view/android/app/src/main/AndroidManifest.xml:20:13-144
+	android:theme
+		ADDED from /home/dominik/Dokumente/scratchpad/flutter/platform_view/android/app/src/main/AndroidManifest.xml:19:13-66
+	android:name
+		ADDED from /home/dominik/Dokumente/scratchpad/flutter/platform_view/android/app/src/main/AndroidManifest.xml:18:13-74
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /home/dominik/Dokumente/scratchpad/flutter/platform_view/android/app/src/main/AndroidManifest.xml:23:13-26:29
+action#android.intent.action.MAIN
+ADDED from /home/dominik/Dokumente/scratchpad/flutter/platform_view/android/app/src/main/AndroidManifest.xml:24:17-69
+	android:name
+		ADDED from /home/dominik/Dokumente/scratchpad/flutter/platform_view/android/app/src/main/AndroidManifest.xml:24:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /home/dominik/Dokumente/scratchpad/flutter/platform_view/android/app/src/main/AndroidManifest.xml:25:17-77
+	android:name
+		ADDED from /home/dominik/Dokumente/scratchpad/flutter/platform_view/android/app/src/main/AndroidManifest.xml:25:27-74
+activity#io.flutter.examples.platform_view.CountActivity
+ADDED from /home/dominik/Dokumente/scratchpad/flutter/platform_view/android/app/src/main/AndroidManifest.xml:28:9-32:128
+	android:parentActivityName
+		ADDED from /home/dominik/Dokumente/scratchpad/flutter/platform_view/android/app/src/main/AndroidManifest.xml:30:13-88
+	android:configChanges
+		ADDED from /home/dominik/Dokumente/scratchpad/flutter/platform_view/android/app/src/main/AndroidManifest.xml:32:13-116
+	android:theme
+		ADDED from /home/dominik/Dokumente/scratchpad/flutter/platform_view/android/app/src/main/AndroidManifest.xml:31:13-63
+	android:name
+		ADDED from /home/dominik/Dokumente/scratchpad/flutter/platform_view/android/app/src/main/AndroidManifest.xml:29:13-75
+meta-data#flutterEmbedding
+ADDED from /home/dominik/Dokumente/scratchpad/flutter/platform_view/android/app/src/main/AndroidManifest.xml:35:9-37:33
+	android:value
+		ADDED from /home/dominik/Dokumente/scratchpad/flutter/platform_view/android/app/src/main/AndroidManifest.xml:37:13-30
+	android:name
+		ADDED from /home/dominik/Dokumente/scratchpad/flutter/platform_view/android/app/src/main/AndroidManifest.xml:36:13-44
+uses-sdk
+INJECTED from /home/dominik/Dokumente/scratchpad/flutter/platform_view/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/dominik/Dokumente/scratchpad/flutter/platform_view/android/app/src/main/AndroidManifest.xml
+INJECTED from /home/dominik/Dokumente/scratchpad/flutter/platform_view/android/app/src/main/AndroidManifest.xml
+MERGED from [com.google.android.material:material:1.0.0] /home/dominik/.gradle/caches/transforms-2/files-2.1/36e952df3788000b19106c83d48b22a9/material-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.0.0] /home/dominik/.gradle/caches/transforms-2/files-2.1/36e952df3788000b19106c83d48b22a9/material-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.1.0] /home/dominik/.gradle/caches/transforms-2/files-2.1/68d6ef75cadff74f727d919e8ab0afd6/appcompat-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.1.0] /home/dominik/.gradle/caches/transforms-2/files-2.1/68d6ef75cadff74f727d919e8ab0afd6/appcompat-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] /home/dominik/.gradle/caches/transforms-2/files-2.1/159101ef13ea3d80c88207a75715e3c9/recyclerview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] /home/dominik/.gradle/caches/transforms-2/files-2.1/159101ef13ea3d80c88207a75715e3c9/recyclerview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/dominik/.gradle/caches/transforms-2/files-2.1/6f9c9bbbb803979baf0940b966632b82/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/dominik/.gradle/caches/transforms-2/files-2.1/6f9c9bbbb803979baf0940b966632b82/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/dominik/.gradle/caches/transforms-2/files-2.1/cdf198080ced4a619043f1d14a3b28ec/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/dominik/.gradle/caches/transforms-2/files-2.1/cdf198080ced4a619043f1d14a3b28ec/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/dominik/.gradle/caches/transforms-2/files-2.1/850b34de8ac0d2a2111f1f02470010cd/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/dominik/.gradle/caches/transforms-2/files-2.1/850b34de8ac0d2a2111f1f02470010cd/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.1.0] /home/dominik/.gradle/caches/transforms-2/files-2.1/b6e077ca9eca8c920ed0c81c3c0358a4/fragment-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0] /home/dominik/.gradle/caches/transforms-2/files-2.1/b6e077ca9eca8c920ed0c81c3c0358a4/fragment-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/dominik/.gradle/caches/transforms-2/files-2.1/35201b4d2a17288e9191b1ce23208f51/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/dominik/.gradle/caches/transforms-2/files-2.1/35201b4d2a17288e9191b1ce23208f51/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /home/dominik/.gradle/caches/transforms-2/files-2.1/4add694d4a3f80b91c21d8d5a882e68c/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /home/dominik/.gradle/caches/transforms-2/files-2.1/4add694d4a3f80b91c21d8d5a882e68c/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/dominik/.gradle/caches/transforms-2/files-2.1/961a07aacf5c728823817af6ceb70583/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/dominik/.gradle/caches/transforms-2/files-2.1/961a07aacf5c728823817af6ceb70583/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /home/dominik/.gradle/caches/transforms-2/files-2.1/d2d440c09bd73772c1af1188d65e2f91/jetified-appcompat-resources-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /home/dominik/.gradle/caches/transforms-2/files-2.1/d2d440c09bd73772c1af1188d65e2f91/jetified-appcompat-resources-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/dominik/.gradle/caches/transforms-2/files-2.1/51a08c0f641c9a6cf73ac3bfd51034a4/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/dominik/.gradle/caches/transforms-2/files-2.1/51a08c0f641c9a6cf73ac3bfd51034a4/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.0.0] /home/dominik/.gradle/caches/transforms-2/files-2.1/446a9dbb2253f0366a8046732b3def8b/transition-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.0.0] /home/dominik/.gradle/caches/transforms-2/files-2.1/446a9dbb2253f0366a8046732b3def8b/transition-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/dominik/.gradle/caches/transforms-2/files-2.1/1a220283481d3e6810d346db33aa0588/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/dominik/.gradle/caches/transforms-2/files-2.1/1a220283481d3e6810d346db33aa0588/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.0.0] /home/dominik/.gradle/caches/transforms-2/files-2.1/c408e7ca4949006c5c53724c04b79783/jetified-activity-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.0.0] /home/dominik/.gradle/caches/transforms-2/files-2.1/c408e7ca4949006c5c53724c04b79783/jetified-activity-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/dominik/.gradle/caches/transforms-2/files-2.1/74e6635de1026d435911fbaeb0e12ecc/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/dominik/.gradle/caches/transforms-2/files-2.1/74e6635de1026d435911fbaeb0e12ecc/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/dominik/.gradle/caches/transforms-2/files-2.1/05aec43040e90ec412f2445ae187ea98/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/dominik/.gradle/caches/transforms-2/files-2.1/05aec43040e90ec412f2445ae187ea98/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /home/dominik/.gradle/caches/transforms-2/files-2.1/9bc284423766443dd3b304a4a500831c/coordinatorlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /home/dominik/.gradle/caches/transforms-2/files-2.1/9bc284423766443dd3b304a4a500831c/coordinatorlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/dominik/.gradle/caches/transforms-2/files-2.1/0246a40347df373f4157bd216f1097fb/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/dominik/.gradle/caches/transforms-2/files-2.1/0246a40347df373f4157bd216f1097fb/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /home/dominik/.gradle/caches/transforms-2/files-2.1/ccfbb6e59961272022125be333767c64/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /home/dominik/.gradle/caches/transforms-2/files-2.1/ccfbb6e59961272022125be333767c64/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/dominik/.gradle/caches/transforms-2/files-2.1/d89be9c73021060c43e75fa15cfb6cce/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/dominik/.gradle/caches/transforms-2/files-2.1/d89be9c73021060c43e75fa15cfb6cce/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.1.0] /home/dominik/.gradle/caches/transforms-2/files-2.1/8fe9eecfca6be0d6d0f77fd2524e7f24/core-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.1.0] /home/dominik/.gradle/caches/transforms-2/files-2.1/8fe9eecfca6be0d6d0f77fd2524e7f24/core-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/dominik/.gradle/caches/transforms-2/files-2.1/62443027c3d24c86f1072686fcf926a8/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/dominik/.gradle/caches/transforms-2/files-2.1/62443027c3d24c86f1072686fcf926a8/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/dominik/.gradle/caches/transforms-2/files-2.1/eeaad6a34e0692d1e5d984272a9c12d0/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/dominik/.gradle/caches/transforms-2/files-2.1/eeaad6a34e0692d1e5d984272a9c12d0/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /home/dominik/.gradle/caches/transforms-2/files-2.1/1d6861040b700c3f48a74adbf582142a/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /home/dominik/.gradle/caches/transforms-2/files-2.1/1d6861040b700c3f48a74adbf582142a/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/dominik/.gradle/caches/transforms-2/files-2.1/0a04303a14f61df7c8eaa1a112832de6/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/dominik/.gradle/caches/transforms-2/files-2.1/0a04303a14f61df7c8eaa1a112832de6/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /home/dominik/.gradle/caches/transforms-2/files-2.1/47065df8937cc7ff6ea500ba1405b62c/lifecycle-runtime-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /home/dominik/.gradle/caches/transforms-2/files-2.1/47065df8937cc7ff6ea500ba1405b62c/lifecycle-runtime-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] /home/dominik/.gradle/caches/transforms-2/files-2.1/f2d0b151eeb12f6b5b516632b899d02e/jetified-savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] /home/dominik/.gradle/caches/transforms-2/files-2.1/f2d0b151eeb12f6b5b516632b899d02e/jetified-savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/dominik/.gradle/caches/transforms-2/files-2.1/08b06e554cba6a712a0218434154ff36/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/dominik/.gradle/caches/transforms-2/files-2.1/08b06e554cba6a712a0218434154ff36/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /home/dominik/.gradle/caches/transforms-2/files-2.1/30b766b1a06f89d5c189b6b921a39dee/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /home/dominik/.gradle/caches/transforms-2/files-2.1/30b766b1a06f89d5c189b6b921a39dee/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/dominik/.gradle/caches/transforms-2/files-2.1/f0fcd39495935c1179eb497d905c06f8/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/dominik/.gradle/caches/transforms-2/files-2.1/f0fcd39495935c1179eb497d905c06f8/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /home/dominik/.gradle/caches/transforms-2/files-2.1/ad2c8a7046f9503605cf7ba1bf830969/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /home/dominik/.gradle/caches/transforms-2/files-2.1/ad2c8a7046f9503605cf7ba1bf830969/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/dominik/.gradle/caches/transforms-2/files-2.1/9623d528bdb2b6f6118e818607e6b173/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/dominik/.gradle/caches/transforms-2/files-2.1/9623d528bdb2b6f6118e818607e6b173/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+INJECTED from /home/dominik/Dokumente/scratchpad/flutter/platform_view/android/app/src/main/AndroidManifest.xml
+INJECTED from /home/dominik/Dokumente/scratchpad/flutter/platform_view/android/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /home/dominik/Dokumente/scratchpad/flutter/platform_view/android/app/src/main/AndroidManifest.xml
+		ADDED from /home/dominik/Dokumente/scratchpad/flutter/platform_view/android/app/src/main/AndroidManifest.xml
+		INJECTED from /home/dominik/Dokumente/scratchpad/flutter/platform_view/android/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/dominik/Dokumente/scratchpad/flutter/platform_view/android/app/src/main/AndroidManifest.xml
+		ADDED from /home/dominik/Dokumente/scratchpad/flutter/platform_view/android/app/src/main/AndroidManifest.xml
+		INJECTED from /home/dominik/Dokumente/scratchpad/flutter/platform_view/android/app/src/main/AndroidManifest.xml

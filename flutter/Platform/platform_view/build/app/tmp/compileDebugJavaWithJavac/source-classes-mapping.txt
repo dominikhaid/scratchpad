@@ -1,0 +1,11 @@
+io/flutter/plugins/GeneratedPluginRegistrant.java
+ io.flutter.plugins.GeneratedPluginRegistrant
+io/flutter/examples/platform_view/CountActivity.java
+ io.flutter.examples.platform_view.CountActivity
+ io.flutter.examples.platform_view.CountActivity$1
+ io.flutter.examples.platform_view.CountActivity$2
+io/flutter/examples/platform_view/MainActivity.java
+ io.flutter.examples.platform_view.MainActivity
+ io.flutter.examples.platform_view.MainActivity$1
+io/flutter/examples/platform_view/BuildConfig.java
+ io.flutter.examples.platform_view.BuildConfig
