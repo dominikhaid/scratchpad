@@ -1,0 +1,28 @@
+plugins {
+    id 'basic.java-application-conventions'
+}
+
+dependencies {
+  implementation project(':utilities')
+  implementation 'org.apache.commons:commons-text'
+  implementation 'com.google.code.gson:gson:2.8.9'
+  implementation 'org.codehaus.groovy:groovy'
+  implementation("com.google.guava:guava:31.0.1-jre")
+  api("com.google.guava:guava:31.0.1-jre")
+  compileOnly 'org.projectlombok:lombok'
+  annotationProcessor 'org.projectlombok:lombok'
+  compile group: 'com.fasterxml.jackson.core', name: 'jackson-core', version: '2.8.8'
+  compile group: 'com.fasterxml.jackson.core', name: 'jackson-annotations', version: '2.8.8'
+  compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.8.8'
+  compile 'commons-io:commons-io:2.11.0'
+  compile 'org.apache.commons:commons-math4:4.0-SNAPSHOT'
+  compile 'ch.qos.logback:logback-site:1.3.0-alpha5'
+  compile group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.17.1'
+  compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.17.1'
+  testImplementation 'junit:junit:4.13'  
+  testImplementation "org.mockito:mockito-core:3.+"
+}
+
+application {
+    mainClass = 'basic.app.App'
+}

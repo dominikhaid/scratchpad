@@ -1,11 +1,4 @@
-# Java script basic syntax
+# Compile a single class
 
-## Links
-
-- [reference](https://www.w3schools.com/java/java_ref_keywords.asp)
-- [docs oracle](https://docs.oracle.com/en/java/javase/11/)
-
-## Run / Compile
-
-- javac main.java
-- java Main
+1. javac -d out foo/Main.java foo/Bar.java
+2. javac -cp out Main.java Bar.java
