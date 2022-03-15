@@ -9,4 +9,7 @@ public class App {
     Logger logger = LoggerFactory.getLogger(App.class);
     logger.info("App started...");
   }
+  
+  String tmp = "dtghz";
+  
 }
